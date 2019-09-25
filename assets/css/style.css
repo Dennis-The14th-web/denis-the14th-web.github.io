@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: url("../images/speed\ tracks.webp");
+    padding: 30px;
+}
+
+.navbar{
+    background: url("../images/underconstruction.jpg");
+    width: 340px;
+    height: 140px;
+    margin-bottom: 10px;
+}
+
+p{
+    color: yellow;
+    line-height: 5px;
+}
