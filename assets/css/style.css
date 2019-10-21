@@ -2,73 +2,43 @@
 
 body{
     background-color: black;
+    color: #ebebeb;
+    width: auto;
 }
 
+hr {
+    background-color: rgb(136, 106, 106);
+    margin-bottom: 50px;
+}
 
 nav{
+    width: 100%;
     margin-bottom: 40px;
 }
-
-/* 
-.navbar
-{
-   background-color: black;
-   border-bottom: 1px solid black;
-} */
-/* 
-.navbar-brand
-{
-    background-color: red;
-    text-align: center;
-    padding: 10px;
-    width: 200px;
-    height: auto;
-    float: right;
-    border-radius: 50px; */
-     /* position: relative;
-    bottom: -6px;
-    right: -220px; */
-    /* border: 1px solid white; */
-/* } */
-
-/* h4
-{
-    color: white;
-    font-size: 25px;
-    font-family: serif;
-    width: cover;
-} */
-
-/* #navbarNav {
-    float: right;
-} */
-
-/* .container {
-    float: right;
-} */
-
-/* .navbar-nav
-{
-    list-style-type: none;
-    margin-left: 100px;
-    padding: 0;
-} */
-
-
-
  
+.container-fluid{
+    background: url(../images/type\ pads.webp);
+    background-position: initial;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 #logo {
-    background-color: maroon;
     float: left;
-    width: 100px;
-    height: 60px;
     font-family: 'Notable', sans-serif;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 500;
     color: #ebebeb;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 100px;
+	transition: transform 1s;
+    transform-style: preserve-3d;
+    -webkit-box-shadow: 10px 0px 10px 0px   rgb(136, 106, 106);
+	-moz-box-shadow:    10px 0px 10px 0px  rgb(136, 106, 106);
+	box-shadow:         10px 0px 10px 0px  rgb(136, 106, 106);
+  }
+
+  
+#logo:hover {
+    border-radius: 10px;
     -webkit-box-shadow: 10px 0px 10px 0px   rgb(37, 4, 4);
 	-moz-box-shadow:    10px 0px 10px 0px  rgb(37, 4, 4);
 	box-shadow:         10px 0px 10px 0px  rgb(37, 4, 4);
@@ -81,14 +51,8 @@ nav{
 	box-shadow:         5px 0px 5px 0px  rgb(37, 4, 4);
   }
 
-  /* {
-    float: right;
-    margin-top: 25px;
-  } */
-
 .row{
-    padding: 20px;
-    margin-top: -30px;
+    margin: -30px 20px 20px 20px;
 }
 
 .col-md-3{
@@ -119,12 +83,11 @@ nav{
      backface-visibility: hidden;
 }
 
-
 .card-back {
     background-color: white;
     width: 100%;
     height: 100%;
-    line-height: 30px;
+    line-height: 25px;
     transform: rotateY(180deg);
     color: black;
 }
@@ -132,12 +95,44 @@ nav{
 .card-title {
     color: brown;
     font-weight: 900;
+    text-decoration: underline;
 }
 
 .card-text, a {
     color: black;
 }
 
+.flex-container{
+    background: url(../images/computer\ image.jpg);
+    display: flex;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#photo {
+    width: 350px;
+    height: 400px;
+    padding: 20px;
+    margin-top: 20px;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    -webkit-box-shadow: 10px 0px 15px 0px   rgb(136, 106, 106);
+	-moz-box-shadow:    10px 0px 15px 0px  rgb(136, 106, 106);
+	box-shadow:         10px 0px 15px 0px  rgb(136, 106, 106);
+    /* border-radius: 50%; */
+    
+}
+
+.flex-container, h1 {
+    color: #ebebeb;
+    padding: 20px;
+}
+
+p {
+    padding: 20px;
+}
 
 .footer
 {
@@ -146,50 +141,4 @@ nav{
     text-align: center;
     padding: 20px;
     color: white;
-    /* position: relative;
-    bottom: -60px; */
 } 
-
-/* .card-img-top {
-    height: 150px;
-} */
-
-
-/* .card-back {
-   
-    
-
-} */
-/* 
-.card{
-    width: 200px;
-    height: 450px;
-} */
-
-/* .card, .card-body, .card-title, .card-text, .card-footer, .text-muted
-{
-    color: black;
-}  */
-
-/* .card {
-	-webkit-border-radius: 20px;
-	-moz-border-radius: 20px;
-    border-radius: 20px;
-} */
-
-/* .card:hover {
-	-webkit-box-shadow: 10px 10px 0px 0px  rgb(46, 59, 21);
-	-moz-box-shadow:    10px 10px 0px 0px  rgb(46, 59, 21);
-	box-shadow:         10px 10px 0px 0px  rgb(46, 59, 21);
-} */
-
-/* .card :hover {
-    -webkit-animation:spin 1s ease-in 1s 1;
-    -moz-animation:spin 1s ease-in 1s 1;
-    animation:spin 1s ease-in 1s 1;
-}
-@-moz-keyframes spin { 50% { -moz-transform: rotateY(90deg); } }
-@-webkit-keyframes spin { 50% { -webkit-transform: rotateY(90deg); } }
-@keyframes spin { 50% { transform:rotateY(90deg);} } */
-
- 
