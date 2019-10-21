@@ -102,6 +102,9 @@ nav{
     height: 100%;
     transition: transform 1s;
     transform-style: preserve-3d;
+    -webkit-box-shadow: 10px 0px 10px 0px   rgb(136, 106, 106);
+	-moz-box-shadow:    10px 0px 10px 0px  rgb(136, 106, 106);
+	box-shadow:         10px 0px 10px 0px  rgb(136, 106, 106);
 
 }
 
