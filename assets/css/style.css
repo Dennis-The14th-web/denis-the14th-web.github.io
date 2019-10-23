@@ -112,10 +112,10 @@ nav{
 }
 
 #photo {
-    width: 300px;
+    width: 250px;
     height: 400px;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 30px;
     transition: transform 1s;
     transform-style: preserve-3d;
     -webkit-box-shadow: 10px 0px 15px 0px   rgb(136, 106, 106);
@@ -129,6 +129,16 @@ nav{
     color: #ebebeb;
     padding: 20px;
 }
+
+.paragraph{
+    margin-top: -40px;
+}
+
+
+#paragraph{
+    margin-top: -80px;
+}
+
 
 p {
     padding: 20px;
