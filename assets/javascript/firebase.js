@@ -1,8 +1,10 @@
 // alert("working")
 // $
 
+require("./keys")
+
 var config = {
-    apiKey: "AIzaSyBw07HQpEJAG77e0xe_-eW2rjJIhlRo0Zo",
+    apiKey: "process.env.apiKey",
     authDomain: "my-portfolio-92fc8.firebaseapp.com",
     databaseURL: "https://my-portfolio-92fc8.firebaseio.com",
     projectId: "my-portfolio-92fc8",
