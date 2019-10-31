@@ -1,7 +1,6 @@
 // alert("this is loaded")
 
 
-exports.firebase = {
-    provider: "firebase",
-    apiKey: process.env.apiKey
-};
+// exports.apiKey = {
+//     apiKey: process.env.FIREBASE_APIKEY
+// };

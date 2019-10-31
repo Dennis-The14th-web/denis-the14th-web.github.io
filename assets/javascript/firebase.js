@@ -1,10 +1,16 @@
 // alert("working")
 // $
 
-require("./keys")
+// require("dotenv").config();
+
+// var apiKey = require("./keys")
+
+// var firebase = require("instant-express-api");
+
+
 
 var config = {
-    apiKey: "process.env.apiKey",
+    apiKey: "AIzaSyBw07HQpEJAG77e0xe_-eW2rjJIhlRo0Zo",
     authDomain: "my-portfolio-92fc8.firebaseapp.com",
     databaseURL: "https://my-portfolio-92fc8.firebaseio.com",
     projectId: "my-portfolio-92fc8",
