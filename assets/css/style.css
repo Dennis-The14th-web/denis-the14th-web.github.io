@@ -3,7 +3,7 @@
 body{
     background-color: black;
     color: #ebebeb;
-    width: auto;
+    /* width: auto; */
 }
 
 hr {
@@ -101,6 +101,7 @@ nav{
 
 .card-text, a {
     color: black;
+    font-weight: normal;
 }
 
 .flex-container{
@@ -116,7 +117,7 @@ nav{
     width: 250px;
     height: 400px;
     padding: 20px;
-    margin-top: 90px;
+    margin-top: 40px;
     transition: transform 1s;
     transform-style: preserve-3d;
     -webkit-box-shadow: 10px 0px 15px 0px   rgb(136, 106, 106);
@@ -133,14 +134,14 @@ nav{
 
 .header{
     font-family: 'Poppins', sans-serif;
-    margin-top: -70px;
-    margin-bottom: 35px;
+    /* margin-top: -70px; */
+    /* margin-bottom: 35px; */
     /* text-decoration: underline; */
 }
 
 .paragraph{
     font-family: 'Poppins', sans-serif;
-    margin-top: -40px;
+    /* margin-top: -40px; */
 }
 
 
