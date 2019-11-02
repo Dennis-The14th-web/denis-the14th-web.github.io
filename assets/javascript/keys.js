@@ -1,6 +1,6 @@
 // alert("this is loaded")
 
 
-// exports.apiKey = {
-//     apiKey: process.env.FIREBASE_APIKEY
-// };
+exports.keys = {
+    apiKey: process.env.API_KEY
+};
