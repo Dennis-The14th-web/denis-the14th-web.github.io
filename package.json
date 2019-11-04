@@ -18,7 +18,6 @@
   "homepage": "https://github.com/Dennis-The14th-web/dennis-the14th-web.github.io#readme",
   "dependencies": {
     "dotenv": "^8.2.0",
-    "instant-express-api": "^2.5.18",
-    "require": "^2.4.20"
+    "instant-express-api": "^2.5.18"
   }
 }
