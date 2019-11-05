@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Dennis-The14th-web/dennis-the14th-web.github.io/issues"
   },
-  "homepage": "https://github.com/Dennis-The14th-web/dennis-the14th-web.github.io#readme"
+  "homepage": "https://github.com/Dennis-The14th-web/dennis-the14th-web.github.io#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
 }
