@@ -163,6 +163,7 @@ p {
     text-align: center;
     text-decoration: none;
     margin: 15px 5px;
+    border-radius: 10px;
   }
   
   .fa:hover {
