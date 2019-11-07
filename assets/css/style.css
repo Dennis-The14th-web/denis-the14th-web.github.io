@@ -197,13 +197,23 @@ p {
   }
   
   .fa-instagram {
-    background: #125688;
+    background: #f09433;
     color: white;
   } 
   
   #resume {
-      color: chartreuse;
+      color: #007bb5;
       font-weight: bolder;
+  }
+
+  #resume:hover{
+    color:  #f5b570;
+    border-radius: 10px;
+    /* transition: transform 1s;
+    transform-style: preserve-3d;
+    -webkit-shadow: 15px 0px 15px 0px   rgb(60, 117, 3);
+	-moz-shadow:    15px 0px 15px 0px  orange; */
+	box-shadow:         15px 0px 15px 0px   #f09433;
   }
 
 .footer
