@@ -199,7 +199,12 @@ p {
   .fa-instagram {
     background: #125688;
     color: white;
-  }  
+  } 
+  
+  #resume {
+      color: chartreuse;
+      font-weight: bolder;
+  }
 
 .footer
 {
