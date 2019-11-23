@@ -1,18 +1,18 @@
 // alert("working")
 // $
 
-require("dotenv").config();
+// require("dotenv").config();
 
 // console.log(process.env);
 
-var config = require("./keys")
+var config = import("./keys")
 
 // var firebase = require("instant-express-api");
 
 
 
 var config = {
-    apiKey: process.env.API_KEY,
+    apiKey: "process.env.API_KEY",
     authDomain: "my-portfolio-92fc8.firebaseapp.com",
     databaseURL: "https://my-portfolio-92fc8.firebaseio.com",
     projectId: "my-portfolio-92fc8",
