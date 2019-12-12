@@ -1,15 +1,8 @@
 // alert("working")
 // $
 
-// require("dotenv").config();
-
-// console.log(process.env);
-
+// Initialize Firebase
 var config = import("./keys")
-
-// var firebase = require("instant-express-api");
-
-
 
 var config = {
     apiKey: "process.env.API_KEY",
@@ -24,33 +17,48 @@ var config = {
 
 firebase.initializeApp(config);
 
+// Reference messages collection
 var messagesRef = firebase.database().ref("messages");
 
 document.getElementById("contactform").addEventListener("submit",
  submitForm);
 
+
+//  Submit form
 function submitForm(){
 // e.preventDefault();
 // console.log(123);
+
+if ($("#name").val() == "" || $("#phone").val() == "" || $("#email").val() == "" || $("#message").val() == "") {
+
+ alert("Form is incomplete. Please fill out all fields.");
+ 
+}else{
+
+// Get values
 var name = getInputVal("name");
 var phone = getInputVal("phone");
 var email = getInputVal("email");
 var message = getInputVal("message");
 //  var name= $("#Form-Input1").val();
-//   var email= $("#Form-Input2").val();
+//  var phone= $("#Form-Input2").val();
+//   var email= $("#Form-Input3").val();
 //    var message= $("#Text-area1").val();
 // console.log(name);
 
 saveMessage(name, phone, email, message);
 
-alert("Your message has been sent!");
+alert("Message sent. I will get back to you ASAP");
 
 }
+};
 
 function getInputVal(id){
   return document.getElementById(id).value;
 }
 
+
+// Save message to firebase
 function saveMessage(name, phone, email, message){
 var newMessageRef = messagesRef.push();
 newMessageRef.set({
