@@ -68,3 +68,31 @@ email: email,
 message: message
 });
 }
+
+
+// Holds the updated time for cards 
+// $(".card").on("click", function(){
+//   event.preventDefault();
+   
+//    var textMuted = moment($(".text-muted").val().trim(), "HH:mm").subtract(10, "years").format("x");
+// })
+
+
+let init = function() {
+    let card = document.querySelector(".text-muted"),
+    startTime = new Date();
+    
+    if (card) {
+      card.addEventListener("click", function(){
+        let miliSeconds = new Date() - startTime;
+
+        alert(miliSeconds/1000 + "seconds,");
+       });
+    }
+}
+
+document.addEventListener("DOMContentLoaded", function(){
+  init();
+
+}, false);
+
