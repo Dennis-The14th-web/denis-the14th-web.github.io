@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 *{margin: 0; padding: 0;}
 
 body{
@@ -21,6 +23,12 @@ nav{
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+h2{
+    color: brown;
+    padding: 30px;
+    font-weight: bolder;
 }
 
 h3, h4, h5 
@@ -119,13 +127,38 @@ h3, h4, h5
     font-weight: normal;
 }
 
-.flex-container{
-    background: url(../images/computer\ image.jpg);
-    display: flex;
-    height: 500px;
-    background-position: center;
+#SLIDE_BG{
+    width: 100%;
+    height: 75vh;
+    background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+    backface-visibility: hidden;
+    animation: slideBg 8s linear infinite 2s;
+    animation-timing-function: ease-in-out;
+    background-image: url('../images/computer\ image.jpg');
+}
+
+@keyframes slideBg {
+    0% {
+        background-image: url('../images/computer\ image.jpg');
+    }
+
+    25% {
+        background-image: url('../images/tech\ beee.jpg');
+    }
+
+    50% {
+        background-image: url('../images/database\ photo.jpg');
+    }
+
+    75% {
+        background-image: url('../images/Atlanta-Dawn2.jpg');
+    }
+
+    100% {
+        background-image: url('../images/database\ image.jpg');
+    }
 }
 
 #photo {
