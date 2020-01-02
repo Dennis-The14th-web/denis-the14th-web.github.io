@@ -25,7 +25,7 @@ nav{
 
 h3, h4, h5 
 {
-   color: rgb(124, 122, 7);
+   color: rgb(228, 225, 55);
 }
 
 #logo {
@@ -34,27 +34,37 @@ h3, h4, h5
     font-size: 20px;
     font-weight: 500;
     color: #ebebeb;
-	transition: transform 1s;
+	/* transition: transform 1s;
     transform-style: preserve-3d;
     -webkit-box-shadow: 10px 0px 10px 0px   rgb(136, 106, 106);
 	-moz-box-shadow:    10px 0px 10px 0px  rgb(136, 106, 106);
-	box-shadow:         10px 0px 10px 0px  rgb(136, 106, 106);
+	box-shadow:         10px 0px 10px 0px  rgb(136, 106, 106); */
   }
 
   
 #logo:hover {
-    border-radius: 10px;
-    -webkit-box-shadow: 10px 0px 10px 0px   rgb(37, 4, 4);
-	-moz-box-shadow:    10px 0px 10px 0px  rgb(37, 4, 4);
-	box-shadow:         10px 0px 10px 0px  rgb(37, 4, 4);
+    color: rgb(228, 225, 55);
+    text-shadow: 4px 1px 4px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(8, 8, 8);
   }
 
-  .nav-item .nav-link:hover {
-      border-radius: 10px;
+.nav-link
+  {
+      font-weight: bolder;
+  }
+
+  .nav-item .nav-link:hover  {
+      /* color: rgb(228, 225, 55); */
+      text-shadow: 2px 1px 2px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(228, 225, 55);
+      /* border-radius: 10px;
     -webkit-box-shadow: 5px 0px 5px 0px   rgb(37, 4, 4);
 	-moz-box-shadow:    5px 0px 5px 0px  rgb(37, 4, 4);
-	box-shadow:         5px 0px 5px 0px  rgb(37, 4, 4);
+	box-shadow:         5px 0px 5px 0px  rgb(37, 4, 4); */
   }
+
+#btn-submit:hover{
+    
+    text-shadow: 2px 1px 2px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(228, 225, 55);
+}  
 
 .row{
     margin: -15px 20px 20px 20px;
@@ -229,22 +239,18 @@ p {
     background-size: contain; 
 } */
 
-.form-group
-{
-    color: rgb(124, 122, 7);
-    font-weight: bolder;
-}
+
 
 #footer 
 {
     background-image: url(../images/portfolio\ footer0202.png);    
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
     border-top: 8px solid rgb(56, 52, 52);
     text-align: left;
     padding: 20px;
-    color: rgb(124, 122, 7);
+    color: rgb(228, 225, 55);
 } 
 
 .footer
@@ -252,5 +258,5 @@ p {
     border-top: 8px solid rgb(56, 52, 52);
     text-align: left;
     padding: 20px;
-    color: rgb(124, 122, 7);
+    color: rgb(228, 225, 55);
 }
