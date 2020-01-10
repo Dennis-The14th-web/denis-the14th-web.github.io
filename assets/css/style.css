@@ -132,7 +132,7 @@ h3, h4, h5
     background-repeat: no-repeat;
     background-size: cover;
     backface-visibility: hidden;
-    animation: slideBg 20s linear infinite 2s;
+    animation: slideBg 12s linear infinite 2s;
     animation-timing-function: ease-in-out;
     background-image: url('../images/computer\ image.jpg');
 }
