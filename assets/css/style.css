@@ -46,10 +46,10 @@ section{
     list-style-type: none;
 }
 
-/* #contact {
-    width: 100%;
-    height: 900px;
-} */
+#contact {
+    font-family: "Space Mono", Arial, serif;
+    color: #ffffff;
+}
 
 #contactline {
     margin-top: -15px;
