@@ -12,10 +12,9 @@ hr {
 }
 
 #hr{
-    width: 500px;
+    width: 300px;
     border: 1px double yellow;
-    margin-bottom: 20px;
-   
+    /* margin-bottom: 20px; */  
 }
 
 nav{
@@ -27,12 +26,12 @@ nav{
 
 section{
     width: 100%;
-    height: 800px;
+    height: 750px;
 }
 
 #about{
     background-color: #ffffff;
-    padding: 60px;
+    /* padding: 60px; */
     
 }
 
@@ -40,14 +39,15 @@ section{
     font-family: "Space Mono", Arial, serif;
     text-align: center;
     font-weight: bolder;
-    padding: 20px;
-    margin: -50px 0 -30px 0;
+    /* padding: 20px; */
+    margin: -50px 0 10px 0;
+    list-style-type: none;
 }
 
-#contact {
+/* #contact {
     width: 100%;
     height: 900px;
-}
+} */
 
 #contactline {
     margin-top: -15px;
@@ -55,7 +55,8 @@ section{
 
 #projects {
     width: 100%;
-    height: 900px;
+    height: auto;
+
 }
 
 #header{
@@ -67,11 +68,11 @@ section{
     margin-bottom: 0;
 }
 
-#header1, .icon, a{
+#header1{
     color: #ffffff;
     text-align: center;
     font-family: "Space Mono", Arial, serif;
-    margin-top: 0;
+    margin-top: -20px;
 
 }
 
@@ -84,8 +85,10 @@ section{
     background:linear-gradient(transparent,  #535353 50%), url(../images/darkcollection03.jpg) no-repeat center; 
     backface-visibility: hidden;
 	background-size: cover;
-	box-shadow:0 12px 15px 0 #708090,0 17px 50px 0 #708090;
+    box-shadow:0 12px 15px 0 #708090,0 17px 50px 0 #708090;
 }
+
+
 
 
 /* ul {width: fit-content; 
@@ -134,7 +137,7 @@ h3, h4, h5
       font-weight: bolder;
   }
 
-  .nav-item .nav-link:hover  {
+.nav-item .nav-link:hover  {
       /* color: rgb(228, 225, 55); */
       text-shadow: 2px 1px 2px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(228, 225, 55);
       /* border-radius: 10px;
@@ -215,7 +218,7 @@ h3, h4, h5
     
 }
 
-#SLIDE_BG{
+/* #SLIDE_BG{
     width: 100%;
     height: 75vh;
     background-position:  center;
@@ -247,7 +250,7 @@ h3, h4, h5
     100% {
         background-image: url('../images/darkcollection04.jpg');
     }
-}
+} */
 
 .center {
     display: block;
@@ -303,7 +306,7 @@ h3, h4, h5
 
 
 p {
-    padding: 20px;
+    padding: 15px;
 }
 
 .fa {
