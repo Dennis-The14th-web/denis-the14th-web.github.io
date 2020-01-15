@@ -13,7 +13,7 @@ hr {
 
 #hr{
     width: 300px;
-    border: 1px double yellow;
+    border: 1px double rgb(228, 225, 55);
     /* margin-bottom: 20px; */  
 }
 
@@ -33,7 +33,8 @@ section{
     background-color: #ffffff;
     width: 100%;
     height: fit-content;
-    /* padding: 60px; */
+    /* margin-top: 60px; */
+    padding: 60px;
     
 }
 
@@ -197,7 +198,7 @@ li{
 
 .card-back {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(255, 165, 0);
+    background-color: rgb(228, 225, 55);
     width: 100%;
     height: 114%;
     line-height: 25px;
@@ -395,7 +396,7 @@ p {
 } */
 
 
-#footer 
+/* #footer 
 {
     background-image: url(../images/portfolio\ footer0202.png);    
     background-position: right;
@@ -405,11 +406,12 @@ p {
     text-align: left;
     padding: 20px;
     color: rgb(228, 225, 55);
-} 
+}  */
 
 .footer
 {
-    border-top: 8px solid rgb(56, 52, 52);
+    background-color: #535353 ;
+    border-top: 8px solid rgb(228, 225, 55);
     text-align: left;
     padding: 20px;
     color: rgb(193, 55, 228);
