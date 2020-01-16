@@ -91,7 +91,7 @@ section{
 	max-width:100%;
 	min-height:100%;
 	position:relative;
-    background:linear-gradient(transparent,  #535353 60%), url(../images/darkcollection03.jpg) no-repeat center; 
+    background:linear-gradient(transparent,  #535353 40%), url(../images/darkcollection03.jpg) no-repeat center; 
     backface-visibility: hidden;
 	background-size: cover;
     box-shadow:0 12px 15px 0 #708090,0 17px 50px 0 #708090;
