@@ -50,8 +50,8 @@ section{
 #contact {
     font-family: "Space Mono", Arial, serif;
     color: #ffffff;
-    min-height: auto;
-    margin-bottom: auto;
+    min-height: 640px;
+    /* margin-bottom: auto; */
 }
 
 /* #contactline {
@@ -91,7 +91,7 @@ section{
 	max-width:100%;
 	min-height:100%;
 	position:relative;
-    background:linear-gradient(transparent,  #535353 50%), url(../images/darkcollection03.jpg) no-repeat center; 
+    background:linear-gradient(transparent,  #535353 60%), url(../images/darkcollection03.jpg) no-repeat center; 
     backface-visibility: hidden;
 	background-size: cover;
     box-shadow:0 12px 15px 0 #708090,0 17px 50px 0 #708090;
@@ -291,15 +291,23 @@ li{
     padding: 20px;
 }
 
-.icon{
-    color: yellow;
+#alph{
+    color: #007bb5;
+}
+
+#alph1{
+   color: #ffffff;
+}
+
+#alph2{
+    color: rgb(252, 172, 24);
 }
 
 .header{
     font-family: "Space Mono", Arial, serif;
     color: black;
     text-align: center;
-    /* margin-top: -70px; */
+    margin-top: -50px;
     /* margin-bottom: 35px; */
     /* text-decoration: underline; */
 }
@@ -312,10 +320,10 @@ li{
 }
 
 
-#paragraph{
+/* #paragraph{
     font-family: 'Poppins', sans-serif;
     margin-top: 25px;
-}
+} */
 
  /* p {
     padding: 15px;
@@ -414,10 +422,10 @@ li{
 
 .footer
 {
-    background-color: #535353 ;
-    border-top: 8px solid rgb(228, 225, 55);
-    text-align: left;
-    margin-top: 0;
-    padding: 30px;
-    color: rgb(193, 55, 228);
+    border-top: 2px solid rgb(228, 225, 55);
+    text-align: center;
+    /* margin-top: 0; */
+    padding: 15px;
+    color: rgb(228, 225, 55);
+    font-weight: bolder;
 }
