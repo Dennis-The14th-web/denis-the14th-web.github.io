@@ -29,7 +29,7 @@ function submitForm(){
 // e.preventDefault();
 // console.log(123);
 
-if ($("#name").val() == "" || $("#phone").val() == "" || $("#email").val() == "" || $("#message").val() == "") {
+if ($("#name").val() == "" || $("#email").val() == "" || $("#message").val() == "") {
 
  alert("Form is incomplete. Please fill out all fields.");
  
@@ -37,7 +37,7 @@ if ($("#name").val() == "" || $("#phone").val() == "" || $("#email").val() == ""
 
 // Get values
 var name = getInputVal("name");
-var phone = getInputVal("phone");
+// var phone = getInputVal("phone");
 var email = getInputVal("email");
 var message = getInputVal("message");
 //  var name= $("#Form-Input1").val();
@@ -46,7 +46,7 @@ var message = getInputVal("message");
 //    var message= $("#Text-area1").val();
 // console.log(name);
 
-saveMessage(name, phone, email, message);
+saveMessage(name, email, message);
 
 alert("Message sent. I will get back to you ASAP");
 
@@ -59,11 +59,10 @@ function getInputVal(id){
 
 
 // Save message to firebase
-function saveMessage(name, phone, email, message){
+function saveMessage(name, email, message){
 var newMessageRef = messagesRef.push();
 newMessageRef.set({
 name: name,
-phone: phone,
 email: email,
 message: message
 });
