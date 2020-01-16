@@ -17,28 +17,29 @@
     
 </head>
 <body>
-<section id="home" class="navbar-light bg-secondary">
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-    <a id="logo" class="navbar-brand" href="#projects"><small>my</small> projects</a>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-secondary sticky-top" id="sticky-nav">
+    <a id="logo" class="navbar-brand scroll-control" href="#home"><small>dennis</small> portfolio</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#about"><font color="white">About<span class="sr-only">(current)</span></font></a>
+          <a class="nav-link scroll-control" href="#about"><font color="white">About<span class="sr-only">(current)</span></font></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./assets/images/Dennis itua Resume Original.pdf"><font color="white">Resume</font></a>
+          <a class="nav-link scroll-control" href="#projects"><font color="white">Projects</font></a>
         </li>
-        <!-- <li class="nav-item">
-            <a class="nav-link" href="#contact"><font color="white">Contact Me</font></a>
-        </li> -->
+        <li class="nav-item">
+            <a class="nav-link scroll-control" href="#contact"><font color="white">Contact</font></a>
+        </li>
       </ul>
     </div>
   </nav>
 
+  <section id="home">
       <img id="photo" src="./assets/images/dennisimage.png" alt="dennis" class="center">
       <h1 id="header">- Dennis Itua -</h1>
       <p id="header1">Full Stack Web Developer / Web Designer</p>
@@ -46,20 +47,20 @@
 
     <hr id="hr" class="center">
         <li class="nav-item">
-        <a class="nav-link" href="#contact" id="contactme"><font color="white">CONTACT ME</font></a>   
+        <a class="nav-link" href="./assets/images/Dennis itua Resume Original.pdf" id="contactme"><font color="white">VIEW RESUME</font></a>   
         </li> 
     <hr id="hr" class="center">
 
     <div id="header1" class="icon">
-    <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/dennis-itua-975b9055/" style="font-size:36px" id="alph"></a>
-    <a class="fa fa-github" href="https://github.com/Dennis-The14th-web" style="font-size:36px" id="alph"></a>
+    <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/dennis-itua-975b9055/" style="font-size:30px" id="alph"></a>
+    <a class="fa fa-github" href="https://github.com/Dennis-The14th-web" style="font-size:30px" id="alph"></a>
+    <a class="fa fa-stack-overflow" href="https://stackoverflow.com/users/12722030/dennis-the14th-web" style="font-size:30px" id="alph"></a>
     </div>
-
-
 </section> 
 
-<section id="about">
 
+<section id="about">
+    <div class="container">
         <div class="row">
 
                     <div class="col-md-3"></div>
@@ -86,15 +87,13 @@
                     <a href="./assets/images/Dennis itua Resume Original.pdf" class="fa fa-resume">Resume</a><br> 
                   </p>
                   </div>
-                  <div class="col-md-3"></div>
-                  
-                  
-                    
-                
+                  <div class="col-md-3"></div>       
         </div>
+    </div>
 </section>
 
           <section id="projects">
+              <!-- <div class="container"> -->
               <h2 class="header">Projects</h2>
 
             
@@ -500,16 +499,14 @@
   <div class="col-md-3"></div>
   <div class="col-md-3"></div>
   <div class="col-md-3"></div>
-    
+<!-- </div>   -->
 </div>
 
 
 </section>
             <section id="contact">
-              
-          
+                
           <div class="container-fluid">
-    
             <div class="mainArea">
         
                 <h2 id="header1">Contact</h2>
@@ -526,12 +523,12 @@
                                 </div>
                             </div>   
                             
-                            <div class="col-md-12">
+                            <!-- <div class="col-md-12">
                                     <div class="form-group">
                                         <label for="exampleFormControlInput1">Phone</label>
                                         <input type="number" class="form-control" id="phone" placeholder="+1">
                                     </div>
-                                </div>  
+                                </div>   -->
 
                             <div class="col-md-12">    
                                 <div class="form-group">
@@ -549,29 +546,17 @@
                                 <button id="btn-submit" type="submit" class="btn btn-info">Submit</button>
 
                         </div> 
-                        <!-- <div id="header1" class="icon"> -->
-                        <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/dennis-itua-975b9055/" style="font-size:36px"></a> 
-                       <!-- </div>      -->
+                        
                     </form>
                     
                 </div>
-    
-    
             </div>
-        
-        </div>
+    </div> 
       </section>
-
-    
-   
-
-      
-
-
     
     <div class="footer">
                     
-            <div id="container"><small>&#9400; 2019 DennisThe14thWeb</small></div>
+            <div id="container"><small>&#9400; 2019 Dennis-The14th-Web</small></div> 
                         
     </div>
 
@@ -585,6 +570,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script type="text/javascript" src="./assets/javascript/firebase.js"></script>
     <script type="text/javascript" src="./assets/javascript/keys.js"></script>
+    <script type="text/javascript" src="./assets/javascript/SP.js"></script>
+
 
 </body>
 </html>

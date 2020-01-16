@@ -1,7 +1,7 @@
 *{margin: 0; padding: 0;}
 
 body{
-    
+    position: relative;
     color: #0c0c0c;
     /* width: auto; */
 }
@@ -19,22 +19,22 @@ hr {
 
 nav{
     width: 100%;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     position: fixed; 
-    z-index: 1
+    z-index: 1;
 }
 
 section{
-    width: 100%;
-    height: 750px;
+    min-height: fit-content;
+    margin-bottom: 2rem;
 }
 
 #about{
     background-color: #ffffff;
-    width: 100%;
-    height: fit-content;
+    /* width: 100%;
+    height: fit-content; */
     /* margin-top: 60px; */
-    padding: 60px;
+    padding: 30px;
     
 }
 
@@ -50,11 +50,14 @@ section{
 #contact {
     font-family: "Space Mono", Arial, serif;
     color: #ffffff;
+    min-height: auto;
+    margin-bottom: auto;
 }
 
-#contactline {
+/* #contactline {
     margin-top: -15px;
-}
+    margin-bottom: 15px;
+} */
 
 #projects {
     width: 100%;
@@ -73,6 +76,7 @@ section{
 
 #header1{
     color: #ffffff;
+    padding: 15px;
     text-align: center;
     font-family: "Space Mono", Arial, serif;
     margin-top: -20px;
@@ -80,11 +84,12 @@ section{
 }
 
 #home{
-    width:100%;
-    height: fit-content;
+    background-color: #242323;
+    /* width:100%; */
+    height: fit-content; 
 	margin:auto;
-	max-width:auto;
-	min-height:auto;
+	max-width:100%;
+	min-height:100%;
 	position:relative;
     background:linear-gradient(transparent,  #535353 50%), url(../images/darkcollection03.jpg) no-repeat center; 
     backface-visibility: hidden;
@@ -312,10 +317,9 @@ li{
     margin-top: 25px;
 }
 
-
-p {
+ /* p {
     padding: 15px;
-}
+}  */
 
 .fa {
     padding: 10px;
@@ -413,6 +417,7 @@ p {
     background-color: #535353 ;
     border-top: 8px solid rgb(228, 225, 55);
     text-align: left;
-    padding: 20px;
+    margin-top: 0;
+    padding: 30px;
     color: rgb(193, 55, 228);
 }
