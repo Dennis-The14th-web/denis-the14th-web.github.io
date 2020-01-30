@@ -8,7 +8,7 @@ body{
 
 hr {
     background-color: rgb(136, 106, 106);
-    margin-bottom: 50px;
+    margin-bottom: 25px;
 }
 
 #hr{
@@ -34,7 +34,7 @@ section{
     /* width: 100%;
     height: fit-content; */
     /* margin-top: 60px; */
-    padding: 30px;
+    padding: 20px;
     
 }
 
@@ -50,7 +50,7 @@ section{
 #contact {
     font-family: "Space Mono", Arial, serif;
     color: #ffffff;
-    min-height: 640px;
+    min-height: 620px;
     /* margin-bottom: auto; */
 }
 
@@ -86,7 +86,7 @@ section{
 #home{
     background-color: #242323;
     /* width:100%; */
-    height: fit-content; 
+    height: 600px; 
 	margin:auto;
 	max-width:100%;
 	min-height:100%;
@@ -162,6 +162,10 @@ li{
   /* #alph:hover{
     text-shadow: 2px 1px 2px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(228, 225, 55);
   } */
+
+#btn-submit {
+    margin-bottom: 10px;
+}
 
 #btn-submit:hover{
     
@@ -419,7 +423,7 @@ li{
     border-top: 2px solid rgb(228, 225, 55);
     text-align: center;
     /* margin-top: 0; */
-    padding: 15px;
+    padding: 0;
     color: rgb(228, 225, 55);
     font-weight: bolder;
 }
