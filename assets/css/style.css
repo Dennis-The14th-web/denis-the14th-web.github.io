@@ -422,8 +422,6 @@ li{
 {
     border-top: 2px solid rgb(228, 225, 55);
     text-align: center;
-    /* margin-top: 0; */
-    padding: 0;
     color: rgb(228, 225, 55);
     font-weight: bolder;
 }
