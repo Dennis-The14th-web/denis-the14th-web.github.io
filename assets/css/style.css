@@ -6,7 +6,7 @@ body{
     /* width: auto; */
 }
 
-hr {
+#contactline {
     background-color: rgb(136, 106, 106);
     margin-bottom: 25px;
 }
@@ -14,7 +14,8 @@ hr {
 #hr{
     width: 300px;
     border: 1px double rgb(228, 225, 55);
-    /* margin-bottom: 20px; */  
+    margin-top: 20px;
+    margin-bottom: 20px; 
 }
 
 nav{
@@ -43,7 +44,7 @@ section{
     text-align: center;
     font-weight: bolder;
     /* padding: 20px; */
-    margin: -30px 0 10px 0;
+    /* margin: -30px 0 10px 0; */
     list-style-type: none;
 }
 
