@@ -27,6 +27,7 @@ nav{
 
 section{
     min-height: auto;
+    padding:2rem;
     margin-bottom: 2rem;
 }
 
@@ -51,6 +52,11 @@ section{
 #contact {
     font-family: "Space Mono", Arial, serif;
     color: #ffffff;
+    background: url(../images/contact\ image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
     /* min-height: 620px; */
     /* margin-bottom: auto; */
 }
@@ -105,12 +111,12 @@ section{
     margin: auto; 
     list-style: none;}
   */
-.container-fluid{
+/* .container-fluid{
     background: url(../images/contact\ image.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+} */
 
 h2{
     color: #ffffff;
@@ -424,8 +430,8 @@ li{
 
 .footer
 {
-    border-top: 2px solid rgb(228, 225, 55);
-    padding: 7px;
+    border-top: 3px solid rgb(228, 225, 55);
+    /* padding: 7px; */
     text-align: center;
     color: rgb(228, 225, 55);
     font-weight: bolder;
