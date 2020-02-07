@@ -26,7 +26,7 @@ nav{
 }
 
 section{
-    min-height: fit-content;
+    min-height: auto;
     margin-bottom: 2rem;
 }
 
@@ -51,7 +51,7 @@ section{
 #contact {
     font-family: "Space Mono", Arial, serif;
     color: #ffffff;
-    min-height: 620px;
+    /* min-height: 620px; */
     /* margin-bottom: auto; */
 }
 
@@ -60,11 +60,11 @@ section{
     margin-bottom: 15px;
 } */
 
-#projects {
+/* #projects {
     width: 100%;
     height: fit-content;
 
-}
+} */
 
 #header{
     font-family: "Kaushan Script", cursive;
@@ -87,10 +87,10 @@ section{
 #home{
     background-color: #242323;
     /* width:100%; */
-    height: 600px; 
+    /* height: 600px; 
 	margin:auto;
 	max-width:100%;
-	min-height:100%;
+	min-height:100%; */
 	position:relative;
     background:linear-gradient(transparent,  #535353 40%), url(../images/darkcollection03.jpg) no-repeat center; 
     backface-visibility: hidden;
@@ -425,6 +425,7 @@ li{
 .footer
 {
     border-top: 2px solid rgb(228, 225, 55);
+    padding: 7px;
     text-align: center;
     color: rgb(228, 225, 55);
     font-weight: bolder;
