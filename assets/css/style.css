@@ -8,14 +8,14 @@ body{
 
 #contactline {
     background-color: rgb(136, 106, 106);
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 
 #hr{
-    width: 300px;
+    width: 200px;
     border: 1px double rgb(228, 225, 55);
-    margin-top: 20px;
-    margin-bottom: 20px; 
+    margin-top: 3px;
+    margin-bottom: 3px; 
 }
 
 nav{
@@ -37,6 +37,10 @@ nav{
     /* margin-top: 60px; */
     padding: 20px;
     
+}
+
+#email{
+    color: rgb(3, 3, 99);
 }
 
 #contactme {
@@ -97,25 +101,11 @@ nav{
 	max-width:100%;
 	min-height:100%; */
 	position:relative;
-    background:linear-gradient(transparent,  #535353 40%), url(../images/darkcollection03.jpg) no-repeat center; 
+    background:linear-gradient(transparent,  #535353 60%), url(../images/darkcollection03.jpg) no-repeat center; 
     backface-visibility: hidden;
 	background-size: cover;
     box-shadow:0 12px 15px 0 #708090,0 17px 50px 0 #708090;
 }
-
-
-
-
-/* ul {width: fit-content; 
-    margin: auto; 
-    list-style: none;}
-  */
-/* .container-fluid{
-    background: url(../images/contact\ image.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-} */
 
 h2{
     color: #ffffff;
@@ -165,16 +155,11 @@ li{
 	box-shadow:         5px 0px 5px 0px  rgb(37, 4, 4); */
   }
 
-  /* #alph:hover{
-    text-shadow: 2px 1px 2px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(228, 225, 55);
-  } */
-
 #btn-submit {
     margin-bottom: 10px;
 }
 
 #btn-submit:hover{
-    
     text-shadow: 2px 1px 2px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(228, 225, 55);
 }  
 
@@ -312,7 +297,7 @@ li{
     font-family: "Space Mono", Arial, serif;
     color: black;
     text-align: center;
-    margin-top: -50px;
+    margin-top: -48px;
     /* margin-bottom: 35px; */
     /* text-decoration: underline; */
 }
@@ -321,18 +306,9 @@ li{
     font-family: "Space Mono", Arial, serif;
     text-align: center;
     color: black;
+    line-height: 22px;
     /* margin-top: -40px; */
 }
-
-
-/* #paragraph{
-    font-family: 'Poppins', sans-serif;
-    margin-top: 25px;
-} */
-
- /* p {
-    padding: 15px;
-}  */
 
 .fa {
     padding: 10px;
@@ -349,36 +325,11 @@ li{
       opacity: 0.7;
   }
   
-/* .fa-facebook {
-    background: #3B5998;
-    color: white;
-  }
-  
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-  }
-  
-  .fa-google {
-    background: #dd4b39;
-    color: white;
-  } */
-  
   .fa-linkedin {
     background: #007bb5;
     color: white;
   }
-  
-  /* .fa-youtube {
-    background: #bb0000;
-    color: white;
-  }
-  
-  .fa-instagram {
-    background: #f09433;
-    color: white;
-  }  */
-  
+
   .fa-resume {
       font-weight: bolder;
       font-size: 50px;
@@ -387,45 +338,6 @@ li{
   .fa-github:hover {
     text-decoration-line: none;
 }
-
-  /* #resume:hover{
-    color:  #3408f7;
-    border-radius: 10px;
-    transition: transform 1s;
-    transform-style: preserve-3d;
-    -webkit-shadow: 15px 0px 15px 0px   rgb(60, 117, 3);
-	-moz-shadow:    15px 0px 15px 0px  orange;
-	box-shadow:         15px 0px 15px 0px   #3408f7;
-  } */
-
-/* .fa-mern 
-{
-    background-image: url(../images/portfolio\ footer0202.png);    
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain; 
-} */
-
-/* .contactform .form-row .col-md-12 .form-group, #name{
-    display: flex;
-} */
-
-/* .fa-linkedin-square {
-    color: rgb(97, 97, 241);
-} */
-
-
-/* #footer 
-{
-    background-image: url(../images/portfolio\ footer0202.png);    
-    background-position: right;
-    background-repeat: no-repeat;
-    background-size: contain;
-    border-top: 8px solid rgb(56, 52, 52);
-    text-align: left;
-    padding: 20px;
-    color: rgb(228, 225, 55);
-}  */
 
 .footer
 {
