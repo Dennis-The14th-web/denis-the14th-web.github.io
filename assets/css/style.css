@@ -1,5 +1,9 @@
 *{margin: 0; padding: 0;}
 
+@-ms-viewport{
+    width: device-width;
+  }
+
 body{
     position: relative;
     color: #0c0c0c;
