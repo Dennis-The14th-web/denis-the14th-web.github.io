@@ -1,9 +1,5 @@
 *{margin: 0; padding: 0;}
 
-@-ms-viewport{
-    width: device-width;
-  }
-
 body{
     position: relative;
     color: #0c0c0c;
@@ -31,7 +27,7 @@ nav{
 }
 
 .section-container{
-    /* padding:2rem; */
+    padding:2rem;
     margin-bottom: 2rem;
 }
 
@@ -57,7 +53,7 @@ nav{
     list-style-type: none;
 }
 
-.contact-container {
+.container-fluid {
     font-family: "Space Mono", Arial, serif;
     color: #ffffff;
     background: url(../images/contact\ image.jpg);
