@@ -153,7 +153,8 @@ li{
 
 .nav-item .nav-link:hover  {
       /* color: rgb(228, 225, 55); */
-      text-shadow: 2px 1px 2px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(228, 225, 55);
+      color: yellow;
+      text-shadow: 4px 1px 4px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(8, 8, 8);
       /* border-radius: 10px;
     -webkit-box-shadow: 5px 0px 5px 0px   rgb(37, 4, 4);
 	-moz-box-shadow:    5px 0px 5px 0px  rgb(37, 4, 4);
@@ -287,20 +288,14 @@ li{
 }
 
 #alph{
-    color: #007bb5;
+    color: #ffffff;
 }
 
-#alph1{
-   color: #111010;
+#alph:hover{
+    color: yellow;
+    text-shadow: 4px 1px 4px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(8, 8, 8);
 }
 
-#alph2{
-    color: rgb(134, 98, 31);
-}
-
-#alph3{
-    color: rgb(252, 172, 24);
-}
 
 .header{
     font-family: "Space Mono", Arial, serif;
@@ -348,11 +343,15 @@ li{
     text-decoration-line: none;
 }
 
+#container {
+    color: #ffffff;
+}
+
 .footer
 {
     border-top: 2px solid rgb(228, 225, 55);
     /* padding: 7px; */
-    text-align: center;
+    text-align: left;
     color: rgb(228, 225, 55);
     font-weight: bolder;
 }
