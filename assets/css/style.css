@@ -44,14 +44,13 @@ nav{
     color: rgb(3, 3, 99);
 }
 
-#contactme {
+li, a, #contact-me {
     color: rgb(8, 89, 175);
     font-family: "Space Mono", Arial, serif;
     text-align: center;
     font-weight: bolder;
     /* padding: 20px; */
     /* margin: -30px 0 10px 0; */
-    list-style-type: none;
 }
 
 .container-fluid{
@@ -98,6 +97,11 @@ nav{
     margin-top: -5px;
 }
 
+#header3{
+    text-align: center;
+    font-family: "Space Mono", Arial, serif;
+}
+
 .portfolio-container{
     background-color: #242323;
     width:100%;
@@ -106,7 +110,7 @@ nav{
 	/* max-width:100%;
 	min-height:100%; */
 	position:relative;
-    background:linear-gradient(transparent,  #e9e5e5 60%), url(../images/darkcollection03.jpg) no-repeat center; 
+    background:linear-gradient(transparent,  #e9e5e5 45%), url(../images/darkcollection03.jpg) no-repeat center; 
     backface-visibility: hidden;
 	background-size: cover;
     box-shadow:0 12px 15px 0 #e9e5e5,0 17px 50px 0 #e9e5e5;
