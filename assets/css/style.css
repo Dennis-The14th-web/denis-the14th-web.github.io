@@ -220,12 +220,12 @@ li{
 .card-title {
     color: rgb(17, 16, 16);
     text-align: center;
-    font-weight: 900;
     text-decoration: none;
 }
 
+
 .card-text{
-    margin-top: -15px;
+    margin-top: -10px;
     padding: 0;
 }
 
