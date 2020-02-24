@@ -211,7 +211,7 @@ li{
     background-color: rgb(228, 225, 55);
     width: 100%;
     height: 114%;
-    line-height: 25px;
+    /* line-height: 15px; */
     transform: rotateY(180deg);
     color: black;
     
@@ -227,7 +227,6 @@ li{
 .card-text{
     margin-top: -15px;
     padding: 0;
-    
 }
 
 .card-text, a {
