@@ -37,14 +37,9 @@ if ($("#name").val() == "" || $("#email").val() == "" || $("#message").val() == 
 
 // Get values
 var name = getInputVal("name");
-// var phone = getInputVal("phone");
 var email = getInputVal("email");
 var message = getInputVal("message");
-//  var name= $("#Form-Input1").val();
-//  var phone= $("#Form-Input2").val();
-//   var email= $("#Form-Input3").val();
-//    var message= $("#Text-area1").val();
-// console.log(name);
+
 
 saveMessage(name, email, message);
 
@@ -67,15 +62,6 @@ email: email,
 message: message
 });
 }
-
-
-// Holds the updated time for cards 
-// $(".card").on("click", function(){
-//   event.preventDefault();
-   
-//    var textMuted = moment($(".text-muted").val().trim(), "HH:mm").subtract(10, "years").format("x");
-// })
-
 
 let init = function() {
     let card = document.querySelector(".text-muted"),
