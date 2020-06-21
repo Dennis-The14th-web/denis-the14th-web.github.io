@@ -3,7 +3,6 @@
 body{
     position: relative;
     color: #0c0c0c;
-    /* width: auto; */
 }
 
 #contactline {
@@ -21,21 +20,17 @@ body{
 
 nav{
     width: 100%;
-    /* margin-bottom: 40px; */
     position: fixed; 
     z-index: 1;
 }
 
 .section-container{
-    /* padding:2rem; */
+    
     margin-bottom: 4rem;
 }
 
 .about-container{
     background-color: #ffffff;
-    /* width: 100%;
-    height: fit-content; */
-    /* margin-top: 60px; */
     padding: 20px;
     
 }
@@ -49,8 +44,7 @@ li, a, #contact-me {
     font-family: "Space Mono", Arial, serif;
     text-align: center;
     font-weight: bolder;
-    /* padding: 20px; */
-    /* margin: -30px 0 10px 0; */
+    
 }
 
 .container-fluid{
@@ -59,9 +53,6 @@ li, a, #contact-me {
     color: #ffffff;
     width:100%;
     height: 600px; 
-	/* margin:auto; */
-	/* max-width:100%;
-	min-height:100%; */
 	position:relative;
     background-position-y:linear-gradient(transparent,  #e9e5e5 90%);
     backface-visibility: hidden;
@@ -106,9 +97,6 @@ li, a, #contact-me {
     background-color: #242323;
     width:100%;
     min-height: 600px; 
-	/* margin:auto; */
-	/* max-width:100%;
-	min-height:100%; */
 	position:relative;
     background:linear-gradient(transparent,  #e9e5e5 45%), url(../images/darkcollection03.jpg) no-repeat center; 
     backface-visibility: hidden;
@@ -137,11 +125,6 @@ li{
     font-size: 20px;
     font-weight: 500;
     color: #ebebeb;
-	/* transition: transform 1s;
-    transform-style: preserve-3d;
-    -webkit-box-shadow: 10px 0px 10px 0px   rgb(136, 106, 106);
-	-moz-box-shadow:    10px 0px 10px 0px  rgb(136, 106, 106);
-	box-shadow:         10px 0px 10px 0px  rgb(136, 106, 106); */
   }
 
   
@@ -155,14 +138,11 @@ li{
       font-weight: bolder;
   }
 
+  
+
 .nav-item .nav-link:hover  {
-      /* color: rgb(228, 225, 55); */
       color: yellow;
       text-shadow: 4px 1px 4px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(8, 8, 8);
-      /* border-radius: 10px;
-    -webkit-box-shadow: 5px 0px 5px 0px   rgb(37, 4, 4);
-	-moz-box-shadow:    5px 0px 5px 0px  rgb(37, 4, 4);
-	box-shadow:         5px 0px 5px 0px  rgb(37, 4, 4); */
   }
 
 #btn-submit {
@@ -188,10 +168,6 @@ li{
     height: 75%;
     transition: transform 1s;
     transform-style: preserve-3d;
-    /* -webkit-box-shadow: 10px 0px 10px 0px   rgb(136, 106, 106);
-	-moz-box-shadow:    10px 0px 10px 0px  rgb(136, 106, 106);
-	box-shadow:         10px 0px 10px 0px  rgb(136, 106, 106); */
-
 }
 
 .col-md-3:hover .card {
@@ -211,7 +187,6 @@ li{
     background-color: rgb(228, 225, 55);
     width: 100%;
     height: 114%;
-    /* line-height: 15px; */
     transform: rotateY(180deg);
     color: black;
     
@@ -235,34 +210,6 @@ li{
     
 }
 
-/* #SLIDE_BG{
-    width: 100%;
-    height: 75vh;
-    background-position:  center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    backface-visibility: hidden;
-    animation: slideBg 12s linear infinite 2s;
-    animation-timing-function: ease-in-out;
-    background-image: url('../images/computer\ image.jpg');
-}
-@keyframes slideBg {
-    0% {
-        background-image: url('../images/computer\ image.jpg');
-    }
-    25% {
-        background-image: url('../images/tech\ beee.jpg');
-    }
-    50% {
-        background-image: url('../images/darkcollection03.jpg');
-    }
-    75% {
-        background-image: url('../images/darkcollection02.jpg');
-    }
-    100% {
-        background-image: url('../images/darkcollection04.jpg');
-    }
-} */
 
 .center {
     display: block;
@@ -278,9 +225,6 @@ li{
     margin-top: 80px 300px 10px 300px;
     transition: transform 1s;
     transform-style: preserve-3d;
-    /* -webkit-box-shadow: 0px 3px 3px 2px   rgb(124, 123, 46);
-	-moz-box-shadow:    0px 3px 3px 2px  rgb(124, 123, 46);
-	box-shadow:         0px 3px 3px 2px  rgb(124, 123, 46); */
     border-radius: 50%;
     
 }
@@ -305,8 +249,6 @@ li{
     color: black;
     text-align: center;
     margin-top: -48px;
-    /* margin-bottom: 35px; */
-    /* text-decoration: underline; */
 }
 
 .paragraph{
@@ -314,7 +256,6 @@ li{
     text-align: center;
     color: black;
     line-height: 23px;
-    /* margin-top: -40px; */
 }
 
 .fa {
@@ -324,7 +265,6 @@ li{
     height: 40px;
     text-align: center;
     text-decoration: none;
-    /* margin: 15px 0 0 0; */
     border-radius: 10px;
   }
   
@@ -353,7 +293,6 @@ li{
 .footer
 {
     border-top: 2px solid rgb(228, 225, 55);
-    /* padding: 7px; */
     text-align: left;
     color: rgb(228, 225, 55);
     font-weight: bolder;
