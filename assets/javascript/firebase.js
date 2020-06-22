@@ -1,6 +1,3 @@
-// alert("working")
-// $
-
 // Initialize Firebase
 var config = import("./keys")
 
@@ -27,7 +24,6 @@ document.getElementById("contactform").addEventListener("submit",
 //  Submit form
 function submitForm(){
 // e.preventDefault();
-// console.log(123);
 
 if ($("#name").val() == "" || $("#email").val() == "" || $("#message").val() == "") {
 
