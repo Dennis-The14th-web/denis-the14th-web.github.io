@@ -25,11 +25,11 @@ $('body').scrollspy({
 });
 
 
-// const scroll = window.requestAnimationFrame || function (callback) {
-//     window.setTimeout(callback, 1000 / 60)
-// };
+const scroll = window.requestAnimationFrame || function (callback) {
+    window.setTimeout(callback, 1000 / 60)
+};
 
-// const elementsToShow = document.querySelectorAll("#header");
+const elementsToShow = document.querySelectorAll("#header");
 
 function loop() {
     // console.log("loop")
