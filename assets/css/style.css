@@ -3,7 +3,7 @@
 body{
     position: relative;
     color: #0c0c0c;
-}
+}  
 
 #contactline {
     background-color: rgb(136, 106, 106);
@@ -25,13 +25,12 @@ nav{
 }
 
 .section-container{
-    
+    scroll-margin-top: 4rem;
     margin-bottom: 4rem;
-}
+} 
 
 .about-container{
     background-color: #ffffff;
-    padding: 20px;
     
 }
 
@@ -95,7 +94,7 @@ li, a, #contact-me {
 
 .portfolio-container{
     background-color: #242323;
-    width:100%;
+    width: 100%;
     min-height: 600px; 
 	position:relative;
     background:linear-gradient(transparent,  #e9e5e5 45%), url(../images/darkcollection03.jpg) no-repeat center; 
@@ -103,6 +102,7 @@ li, a, #contact-me {
 	background-size: cover;
     box-shadow:0 12px 15px 0 #e9e5e5,0 17px 50px 0 #e9e5e5;
 }
+
 
 h2{
     color: #ffffff;
@@ -159,7 +159,7 @@ li{
 
 .col-md-4{
     perspective: 1000px;
-    margin-bottom: 0px;
+    margin-bottom: -35px;
 }
 
 .card {
@@ -253,6 +253,7 @@ li{
     color: black;
     text-align: center;
     margin-top: -48px;
+    margin-bottom: -20px;
 }
 
 .paragraph{
