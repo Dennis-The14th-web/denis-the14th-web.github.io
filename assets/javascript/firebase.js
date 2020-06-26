@@ -2,7 +2,7 @@
 var config = import("./keys")
 
 var config = {
-    apiKey: "process.env.API_KEY",
+    apiKey: "AIzaSyBw07HQpEJAG77e0xe_-eW2rjJIhlRo0Zo",
     authDomain: "my-portfolio-92fc8.firebaseapp.com",
     databaseURL: "https://my-portfolio-92fc8.firebaseio.com",
     projectId: "my-portfolio-92fc8",
@@ -28,6 +28,7 @@ function submitForm(){
 if ($("#name").val() == "" || $("#email").val() == "" || $("#message").val() == "") {
 
  alert("Form is incomplete. Please fill out all fields.");
+ reset()
  
 }else{
 
@@ -58,6 +59,12 @@ email: email,
 message: message
 });
 }
+
+function reset() {
+  name = $("#name").val(""),
+  email = $("#email").val(""),
+  message = $("#message").val("")
+};
 
 let init = function() {
     let card = document.querySelector(".text-muted"),

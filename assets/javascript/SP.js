@@ -1,5 +1,3 @@
-// alert("working");
-
 $('a.scroll-control[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
         var target = $(this.hash);
@@ -18,7 +16,7 @@ $('.scroll-control').click(function () {
     $('.navbar-collapse').collapse('hide');
 });
 
-console.log(innerHeight)
+//console.log(innerHeight)
 
 // Activate scrollspy to add active class to navbar items on scroll
 $('body').scrollspy({
@@ -27,11 +25,11 @@ $('body').scrollspy({
 });
 
 
-const scroll = window.requestAnimationFrame || function (callback) {
-    window.setTimeout(callback, 1000 / 60)
-};
+// const scroll = window.requestAnimationFrame || function (callback) {
+//     window.setTimeout(callback, 1000 / 60)
+// };
 
-const elementsToShow = document.querySelectorAll("#header");
+// const elementsToShow = document.querySelectorAll("#header");
 
 function loop() {
     // console.log("loop")
@@ -46,9 +44,8 @@ function loop() {
     scroll(loop);
 }
 
-// Helper function from: http://stackoverflow.com/a/7557433/274826
+
 function isElementInViewport(el) {
-    // special bonus for those using jQuery
     if (typeof jQuery === "function" && el instanceof jQuery) {
         el = el[0];
     }

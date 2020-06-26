@@ -1,5 +1,5 @@
-// Exports api key from .env file
+// keys = {
+//     apiKey: process.env.API_KEY
+// };
 
-exports.keys = {
-    apiKey: process.env.API_KEY
-};
+// exports(keys);
