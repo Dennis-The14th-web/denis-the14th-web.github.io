@@ -302,3 +302,13 @@ li{
     color: rgb(228, 225, 55);
     font-weight: bolder;
 }
+
+
+/* responsive media queries */
+
+@media only screen and (max-width: 600px) {
+    .col-md-4{
+        perspective: 1000px;
+        margin-bottom: -10px;
+    }
+  }
