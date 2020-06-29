@@ -311,4 +311,14 @@ li{
         perspective: 1000px;
         margin-bottom: -10px;
     }
+
+    #header1{
+        color: #252323;
+        font-size: 1.5em;
+        padding: 5px;
+        text-align: center;
+        font-family: "Space Mono", Arial, serif;
+        font-weight: 700;
+        margin-top: -5px;
+    }
   }
