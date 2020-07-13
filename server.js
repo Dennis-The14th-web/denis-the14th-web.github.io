@@ -1,5 +1,6 @@
 // Dependencies
 var express = require("express");
+var mongoose = require("mongoose");
 var mongojs = require("mongojs");
 var logger = require("morgan");
 var path = require("path");
@@ -22,7 +23,11 @@ app.use(express.json());
 app.use(express.static("public"));
 
 // Database configuration
-var databaseUrl = "mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4";
+// if (process.env.NODE_ENV === "production") {
+//   app.use(express.static("client/build"));
+// }
+// DB Setup (connect mongoose and instance of mongodb)
+var databaseUrl = mongoose.connect(process.env.MONGOLAB || "mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4");
 var collections = ["feedbacks"];
 
 // Hook mongojs config to db variable
