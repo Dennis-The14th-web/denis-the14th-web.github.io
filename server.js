@@ -1,6 +1,5 @@
 // Dependencies
 var express = require("express");
-// var mongoose = require("mongoose");
 var mongojs = require("mongojs");
 var logger = require("morgan");
 var path = require("path");
@@ -26,7 +25,7 @@ app.use(express.static("public"));
 if (process.env.NODE_ENV === "production") {
   app.use(express.static("public"));
 }
-// DB Setup (connect mongoose and instance of mongodb)
+// DB Setup (connect mongolab cloud management and instance of mongodb)
 var databaseUrl = (process.env.MONGOLAB || "mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4");
 var collections = ["feedbacks"];
 
@@ -69,6 +68,3 @@ const port = process.env.PORT || 3000;
 app.listen(port);
 console.log('Server listening on: ', port);
 
-// app.listen(3000, function() {
-//   console.log("App running on port 3000!");
-// });

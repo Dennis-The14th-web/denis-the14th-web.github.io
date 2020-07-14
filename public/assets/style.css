@@ -321,4 +321,13 @@ li{
         font-weight: 700;
         margin-top: -5px;
     }
+
+    .footer
+{
+    border-top: 2px solid rgb(228, 225, 55);
+    font-size: .5em;
+    text-align: left;
+    color: rgb(228, 225, 55);
+    font-weight: bolder;
+}
   }
