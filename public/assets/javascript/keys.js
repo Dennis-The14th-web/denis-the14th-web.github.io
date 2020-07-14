@@ -1,5 +1,5 @@
-// keys = {
-//     apiKey: process.env.API_KEY
-// };
+keys = {
+    databaseUrl: process.env.Url
+};
 
-// exports(keys);
+exports(keys);
