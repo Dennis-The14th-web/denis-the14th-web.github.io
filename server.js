@@ -3,7 +3,7 @@ var express = require("express");
 var mongojs = require("mongojs");
 var logger = require("morgan");
 var path = require("path");
-var databaseUrl = import("keys");
+// var databaseUrl = import("keys");
 // var User = require("./Model/userModel")
 // var mongoose = require("mongoose");
 
@@ -28,7 +28,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("public"));
 }
 // DB Setup (connect mongolab cloud management and instance of mongodb)
-databaseUrl = (process.env.MONGOLAB || "mongodb://process.env.Url");
+databaseUrl = (process.env.MONGOLAB || "mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4");
 var collections = ["feedbacks"];
 
 // Hook mongojs config to db variable

@@ -19,7 +19,7 @@ $('.scroll-control').click(function () {
 //console.log(innerHeight)
 
 // Activate scrollspy to add active class to navbar items on scroll
-$('body').scrollspy({
+$('body').scroll({
     target: '#sticky-nav',
     offset: $(".navbar").innerHeight() + 10
 });
@@ -32,7 +32,7 @@ const scroll = window.requestAnimationFrame || function (callback) {
 const elementsToShow = document.querySelectorAll("#header");
 
 function loop() {
-    // console.log("loop")
+    console.log("loop")
     elementsToShow.forEach(function (element) {
         if (isElementInViewport(element)) {
             element.classList.add('is-visible');

@@ -11,7 +11,7 @@ body{
     margin-bottom: 5px;
 }
 
-#hr{
+#line{
     width: 200px;
     border: 1px double rgb(8, 89, 175);
     margin-top: 3px;
@@ -24,17 +24,34 @@ nav{
     z-index: 1;
 }
 
+#navbarNav .navbar-nav .nav-item .nav-link {
+     color: #ebebeb;
+}
+
 .section-container{
     scroll-margin-top: 4rem;
     margin-bottom: 4rem;
 } 
 
 .about-container{
-    background-color: #ffffff;
-    
+    background-color: #ffffff;    
 }
 
-#email{
+.alert {
+    text-align: center;
+    padding: 10px;
+    color: darkred;
+    font-weight: bolder;
+    background: #79c879;
+    margin-bottom: 10px;
+    display: none;
+}
+
+#contact-me {
+    background: palegoldenrod;
+}
+
+#emails{
     color: rgb(3, 3, 99);
 }
 
@@ -53,12 +70,10 @@ li, a, #contact-me {
     width:100%;
     height: 800px; 
 	position:relative;
-    background-position-y:linear-gradient(transparent,  #e9e5e5 90%);
     backface-visibility: hidden;
     background-size: cover;
     box-shadow:0 -5px 5px -5px #e9e5e5, 0 -5px 5px -5px #e9e5e5;
 }
-
 
 #header{
     font-family: "Kaushan Script", cursive;
@@ -69,7 +84,7 @@ li, a, #contact-me {
     margin-bottom: 0;
 }
 
-#header1{
+.header1{
     color: #252323;
     padding: 5px;
     text-align: center;
@@ -127,7 +142,6 @@ li{
     color: #ebebeb;
   }
 
-  
 #logo:hover {
     color: rgb(228, 225, 55);
     text-shadow: 4px 1px 4px red, 0 0 1em rgb(228, 225, 55), 0 0 0.2em rgb(8, 8, 8);
@@ -170,7 +184,7 @@ li{
     transform-style: preserve-3d;
 }
 
-#cardhead {
+.cardhead {
     text-align: center;
 }
 
@@ -214,7 +228,6 @@ li{
     
 }
 
-
 .center {
     display: block;
     margin-left: auto;
@@ -226,7 +239,7 @@ li{
     width: 200px;
     height: 200px;
     padding: 20px;
-    margin-top: 80px 300px 10px 300px;
+    margin-top: 80px;
     transition: transform 1s;
     transform-style: preserve-3d;
     border-radius: 50%;
@@ -238,7 +251,7 @@ li{
     padding: 20px;
 }
 
-#alph{
+.fa {
     color: #ffffff;
 }
 
@@ -312,7 +325,7 @@ li{
         margin-bottom: -10px;
     }
 
-    #header1{
+    .header1{
         color: #252323;
         font-size: 1.5em;
         padding: 5px;
