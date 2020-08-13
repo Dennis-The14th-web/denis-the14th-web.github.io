@@ -12,7 +12,6 @@
       url: "/submit",
       data: {
         name: $("#name").val(),
-        mesage: $("#mesage").val(),
         message: $("#message").val(),
         created: Date.now(),
       }
@@ -24,7 +23,6 @@
     function clearData () {
       data: [{
         name: $("#name").val(""),
-        mesage: $("#mesage").val(""),
         message: $("#message").val("")
       }]
     }

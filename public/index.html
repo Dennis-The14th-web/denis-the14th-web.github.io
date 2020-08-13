@@ -16,9 +16,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary sticky-top" id="sticky-nav">
+    <nav class="navbar navbar-expand-lg navbar-light sticky-top" id="sticky-nav">
         <a id="logo" class="navbar-brand scroll-control" href="#portfolio"><small>dennis</small> portfolio</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="hamburger">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
@@ -30,7 +30,7 @@
               <a class="nav-link scroll-control" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link scroll-control" href="#contact">Contact</a>
+                <a class="nav-link scroll-control" href="#contact">Feedback</a>
             </li>
           </ul>
         </div>
@@ -74,9 +74,7 @@
               <p class="paragraph">
                 I'm highly skilled and dependable Software Developer with a strong technical background seeking an opportunity to utilize my skills to foster advancement and boost productivity in a growing company. 
                 <br>
-                Please Kindly Email Me @ dennis.itua1@gmail.com<a class="fa fa-envelope" href="mailto:dennis.itua1@gmail.com" style="font-size:20px" id="emails"></a> or leave a message in the contact page and I will get back to you ASAP. .
-                <br>
-                <a href="./assets/images/dennisituaupdatedresume.pdf" class="fa fa-resume" style="color: blue;">Resume</a> 
+                Please Kindly Email Me @ dennis.itua1@gmail.com<a class="fa fa-envelope" href="mailto:dennis.itua1@gmail.com" style="font-size:20px" id="emails"></a> or leave a message in the feedback section. 
               </p>
               </div>
               <div class="col-md-3"></div>       
@@ -87,28 +85,27 @@
       <!-- Projects -->
       <div class="projects-container section-container w-100 p-4 h-100" id="projects">
           <div class="container">
-            <h2 class="header">Projects</h2>
+            <h2 class="header" id="pj">Projects</h2>
             <!-- <p id="header1"><b>Hover around each card to view application github repository and deployed link.</b></p> -->
 
             <!-- <div class="container"> -->
             <div class="row">
             
-                  <div class="col-md-4">
-                      <h6 class="cardhead">gif KOLECTIONS APP</h6>
-                          
-                              <div class="card">
-                              <img src="./assets/images/giphycover.gif" class="card-img-top" alt="giphy cover">
+                <div class="col-md-4">
+                  <h6 class="cardhead">DPD Movies</h6>
+                    
+                          <div class="card">
+                          <img src="./assets/images/grafity.photo.jpg" class="card-img-top" alt="pddmovies">
+                          <div class="card-body"> 
+                          </div>
+                      
+                          <div class="card-back">
                               <div class="card-body">
-                              </div>   
-                          
-
-                              <div class="card-back">
-                                  <div class="card-body">
-                                      <h5 class="card-title"><a href="https://github.com/Dennis-The14th-web/GifTastic"><small>gif KOLECTIONS Repo Link</small></a></h5>
-                                      <p class="card-text"><small><b>Note:</b><br>Link must be underlined in blue color to get to the directory.</small><b><br><a href="https://dennis-the14th-web.github.io/GifTastic/"><small>Click here for deployed app link</small></a></b></p>
-                                  </div>
-                                  </div>
+                                  <h5 class="card-title"><a href="https://github.com/Dennis-The14th-web/DPD-Movies"><small>DPD Movies Repo Link</small></a></h5>
+                                  <p class="card-text"><small><b>Note:</b><br> Link must be underlined in blue color to get to the directory.</small><br><b><a href="https://pddmovieappthe14web.herokuapp.com/"><small>Click here for deployed app link</small></a></b></p>
                               </div>
+                              </div>
+                          </div>
                     
                       </div> 
             
@@ -174,22 +171,23 @@
                   </div>
             
                   <div class="col-md-4">
-                    <h6 class="cardhead">HARMONY NEST APP</h6>
-                    
+                          <h6 class="cardhead"><strong> gifKOLECTIONS APP </strong></h6>
+                          
                           <div class="card">
-                          <img src="./assets/images/grafity.photo.jpg" class="card-img-top" alt="FriendFinder">
-                          <div class="card-body"> 
-                          </div>
+                          <img src="./assets/images/giphycover.gif" class="card-img-top" alt="giphy cover">
+                          <div class="card-body">
+                          </div>   
                       
+
                           <div class="card-back">
                               <div class="card-body">
-                                  <h5 class="card-title"><a href="https://github.com/Dennis-The14th-web/FriendFinder"><small>FriendFinder Repo Link</small></a></h5>
-                                  <p class="card-text"><small><b>Note:</b><br> Link must be underlined in blue color to get to the directory.</small><br><b><a href="https://stormy-brushlands-80802.herokuapp.com/"><small>Click here for deployed app link</small></a></b></p>
+                                  <h5 class="card-title"><a href="https://github.com/Dennis-The14th-web/GifTastic"><small>gifKOLECTIONS Repo Link</small></a></h5>
+                                  <p class="card-text"><small><b>Note:</b><br>Link must be underlined in blue color to get to the directory.</small><b><br><a href="https://dennis-the14th-web.github.io/GifTastic/"><small>Click here for deployed app link</small></a></b></p>
                               </div>
                               </div>
                           </div>
-                      
-                  </div>
+                  </div> 
+                    
                   <div class="col-md-4">
                     <h6 class="cardhead">BURGER RESTAURANT APP</h6>
                       
@@ -217,7 +215,7 @@
       <div class="container-fluid">
       <div class="contact-container section-container w-100 p-3 h-100" id="contact">
           <div class="container">
-            <h2 id="header2">Contact</h2>
+            <h2 id="header2">Feedback</h2>
             <hr id="contactline">
             <div class="alert">Message was successfully sent.</div>
 
@@ -228,24 +226,24 @@
                         <div class="col-md-12">
                             <div class="form-group">
                                 <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Full Name" required>
+                                <input type="text" class="form-control" id="name" placeholder="Full Name/Nick Name" required>
                             </div>
                         </div>   
                         
-                        <div class="col-md-12">    
+                        <!-- <div class="col-md-12">    
                             <div class="form-group">
                                 <label for="email">Email</label>
                                 <input type="email" class="form-control" id="email" placeholder="Enter email" required>
                             </div>
-                        </div>          
+                        </div>           -->
                         
                         <div class="col-md-12">     
                             <div class="form-group">
                                 <label for="message">Message</label>
-                                <textarea class="form-control" id="message" rows="8" placeholder="Leave a message and I will get back to you ASAP..."></textarea>
+                                <textarea class="form-control" id="message" rows="8" placeholder="Write me, tell me where I need to improve my skills on.... bh."></textarea>
                             </div>
                         </div>     
-                            <button id="btn-submit" type="submit" class="btn btn-info">Submit</button>
+                            <button id="btn-submit" type="submit" class="btn btn-warning">Submit</button>
 
                     </div> 
                     
@@ -257,13 +255,13 @@
     </div>
 
       <!-- Footer -->
-      <div class="footer fixed-bottom bg-secondary">
+      <div class="footer fixed-bottom " id="sticky-footer" >
         <div class="header1">
             <a class="fa fa-linkedin-square" href="https://www.linkedin.com/in/dennis-itua-975b9055/" style="font-size:25px"></a>
             <a class="fa fa-github" href="https://github.com/Dennis-The14th-web" style="font-size:25px"></a>
             <a class="fa fa-envelope" href="mailto:dennis.itua1@gmail.com" style="font-size:25px"></a>
             <a class="fa fa-stack-overflow" href="https://stackoverflow.com/users/12722030/dennis-the14th-web" style="font-size:25px"></a>
-            <div id="container"><small>Projects Animation Not Compactible With Internet Explorer <b> &#9400; 2020 Dennis Itua </b></small></div> 
+            <div id="container"><small>Projects Animation Not Compactible With Internet Explorer <b>&#9400; 2020 Dennis Itua </b></small></div> 
             </div>            
 </div>
 
@@ -272,7 +270,10 @@
 <script src="../public/app.js"></script>
 <script src="./assets/javascript/keys.js"></script>
 <script src="./assets/javascript/SP.js"></script>
+
+
+
+
     
 </body>
-
 </html>
