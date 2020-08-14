@@ -11,16 +11,15 @@
       dataType: "json",
       url: "/submit",
       data: {
-        name: $("#name").val(),
-        message: $("#message").val(),
+        name: $("#name").val().trim(),
+        message: $("#message").val().trim(),
         created: Date.now(),
       },
       success: function(data){
-        alert('Your message has been successfully sent.');
-       }
+      alert('Your message has been successfully sent.');
+    }
     })
     // console.log(data);
-
     clearData()
     });
     
