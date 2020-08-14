@@ -28,8 +28,9 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("public"));
 }
 // DB Setup (connect mongolab cloud management and instance of mongodb)
-databaseUrl = (process.env.MONGOLAB || "mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4");
-var collections = ["feedbacks"];
+databaseUrl = (process.env.MONGOLAB || "");
+// databaseUrl = ('mongodb://192.168.99.100/Contact');
+var collections = ["feedback"];
 
 // Hook mongojs config to db variable
 var db = mongojs(databaseUrl, collections);
@@ -49,9 +50,10 @@ app.get("/", (req, res) => {
 
 // Handle form submission, save submission to mongodb
 app.post("/submit", (req, res) => {
-  console.log(req.body);
+  // console.log(req.body);
   // Insert the result into the feedbacks collection
   db.feedbacks.insert(req.body, (error, saved) => {
+    console.log(saved);
     // Log any errors
     if (error) {
       console.log(error);
@@ -59,7 +61,7 @@ app.post("/submit", (req, res) => {
     else {
       // Otherwise, send the result back to the browser
       // This will fire off the success function of the ajax request
-      res.send(saved);
+      res.json(saved);
     }
   });
 });

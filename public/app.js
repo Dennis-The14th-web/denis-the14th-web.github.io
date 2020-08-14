@@ -14,9 +14,13 @@
         name: $("#name").val(),
         message: $("#message").val(),
         created: Date.now(),
-      }
+      },
+      success: function(data){
+        alert('Your message has been successfully sent.');
+       }
     })
-    alert("message was successfully sent"); 
+    // console.log(data);
+
     clearData()
     });
     
