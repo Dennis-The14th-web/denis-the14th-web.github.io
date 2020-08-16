@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("public"));
 }
 // DB Setup (connect mongolab cloud management and instance of mongodb)
-databaseUrl = (process.env.MONGOLAB || process.env.URL);
+databaseUrl = (process.env.MONGOLAB || `mongodb://${process.env.URL}`);
 // databaseUrl = ('mongodb://192.168.99.100/Contact');
 var collections = ["feedback"];
 
@@ -71,5 +71,5 @@ app.post("/submit", (req, res) => {
 const port = process.env.PORT || 3000;
 // const server = http.createServer(app);
 app.listen(port);
-console.log("Server listening on:", port);
+console.log("Server listening live on:", port);
 
