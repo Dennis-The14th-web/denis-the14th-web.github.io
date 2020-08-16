@@ -16,7 +16,7 @@ var app = express();
 // the :status token will be colored red for server error codes,
 // yellow for client error codes, cyan for redirection codes,
 // and uncolored for all other codes.
-app.use(logger("dev"));
+app.use(logger("prod"));
 
 // Parse request body as JSON
 app.use(express.urlencoded({ extended: true }));
