@@ -3,6 +3,7 @@ var express = require("express");
 var mongojs = require("mongojs");
 var logger = require("morgan");
 var path = require("path");
+require('dotenv').config();
 
 // var User = require("./Model/userModel")
 // var mongoose = require("mongoose");
@@ -28,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("public"));
 }
 // DB Setup (connect mongolab cloud management and instance of mongodb)
-databaseUrl = (process.env.MONGOLAB || "mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4");
+databaseUrl = (process.env.MONGOLAB || process.env.URL);
 // databaseUrl = ('mongodb://192.168.99.100/Contact');
 var collections = ["feedback"];
 
@@ -53,7 +54,7 @@ app.post("/submit", (req, res) => {
   // console.log(req.body);
   // Insert the result into the feedbacks collection
   db.feedbacks.insert(req.body, (error, saved) => {
-    console.log(saved);
+    // console.log(saved);
     // Log any errors
     if (error) {
       console.log(error);
