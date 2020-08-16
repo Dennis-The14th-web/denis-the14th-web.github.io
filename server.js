@@ -29,7 +29,7 @@ if (process.env.NODE_ENV === "production") {
   app.use(express.static("public"));
 }
 // DB Setup (connect mongolab cloud management and instance of mongodb)
-databaseUrl = (process.env.MONGOLAB || `mongodb://${process.env.URL}`);
+databaseUrl = (process.env.MONGOLAB || 'mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4');
 // databaseUrl = ('mongodb://192.168.99.100/Contact');
 var collections = ["feedback"];
 
