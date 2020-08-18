@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("public"));
   }
 
-mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true },()=> console.log('connected to BD!'));
+mongoose.connect('process.env.DB_URI', { useNewUrlParser: true, useUnifiedTopology: true },()=> console.log('connected to BD!'));
 
 // module.exports = router;
 
