@@ -39,8 +39,7 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("public"));
   }
 
-mongoose.connect('mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4', 
-{ useNewUrlParser: true, useUnifiedTopology: true }, () => console.log("connected to DB"));
+mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true }, () => console.log("connected to DB"));
 
 // module.exports = router;
 

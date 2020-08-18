@@ -22,7 +22,7 @@ $("#btn-submit").on("click", (e) => {
 
       clearData()
     });
-    
+
     });
     
     function clearData() {
