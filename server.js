@@ -25,7 +25,7 @@ app.post('/submit', (req, res) => {
         name: req.body.name,
         message: req.body.message
     });
-    console.log("Data:", post);
+    // console.log("Data:", post);
     post.save()
     .then(data => {
         res.json(data);
@@ -39,7 +39,8 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("public"));
   }
 
-mongoose.connect('process.env.DB_URI', { useNewUrlParser: true, useUnifiedTopology: true },()=> console.log('connected to BD!'));
+mongoose.connect('mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4', 
+{ useNewUrlParser: true, useUnifiedTopology: true }, () => console.log("connected to DB"));
 
 // module.exports = router;
 
