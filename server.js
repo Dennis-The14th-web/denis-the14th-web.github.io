@@ -46,4 +46,4 @@ mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology
 // Listen to port
 const Port = process.env.PORT || 3000;
 app.listen(Port);
-console.log('Server is listenign live on', Port);
+console.log('Server now listening on PORT',Port)
