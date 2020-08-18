@@ -1,30 +1,31 @@
-/* Note Taker (18.2.6)
- * front-end
- * ==================== */
-  
-  // When the #btn-submit button is clicked
-  $(document).on("click", "#btn-submit", (e) => {
+
+$("#btn-submit").on("click", (e) => {
     e.preventDefault();
-    // AJAX POST call to the submit route on the server
-    // This will take the data from the form and send it to the server
-    $.ajax({
-      type: "POST",
-      dataType: "json",
-      url: "/submit",
-      data: {
-        name: $("#name").val().trim(),
-        message: $("#message").val().trim(),
-        created: Date.now(),
-      },
-      success: function(data){
-      alert('Your message has been successfully sent.');
-    }
-    })
-    // console.log(data);
-    clearData()
+    
+    const name = $("#name").val().trim();
+    const message = $("#message").val().trim();
+
+    const data = {
+      name,
+      message,
+    };
+
+    $.post('/submit', data, () => {
+
+      // show alert
+     document.querySelector(".alert").style.display = "block" ;
+  
+  // hide alert after three seconds
+     setTimeout(()=>{
+     document.querySelector(".alert").style.display = "none" ;
+     },4000);
+
+      clearData()
     });
     
-    function clearData () {
+    });
+    
+    function clearData() {
       data: [{
         name: $("#name").val(""),
         message: $("#message").val("")

@@ -1,75 +1,45 @@
-// Dependencies
-var express = require("express");
-var mongojs = require("mongojs");
-var logger = require("morgan");
-var path = require("path");
-require('dotenv').config();
+const express = require('express');
+const mongoose = require('mongoose');
+const bodyParser = require('body-parser');
+const Post = require('./models/Post');
 
-// var User = require("./Model/userModel")
-// var mongoose = require("mongoose");
+require('dotenv/config');
 
+// Initialize express
+const app = express();
 
-var app = express();
+// Access middleware
+app.use(bodyParser.json());
+// app.use('/submit', postsRoutes);
 
-// Set the app up with morgan.
-// morgan is used to log our HTTP Requests. By setting morgan to 'dev'
-// the :status token will be colored red for server error codes,
-// yellow for client error codes, cyan for redirection codes,
-// and uncolored for all other codes.
-app.use(logger("dev"));
-
-// Parse request body as JSON
-app.use(express.urlencoded({ extended: true }));
-app.use(express.json());
-// Make public a static folder
+// Accessing home page
 app.use(express.static("public"));
 
-// Database configuration
-if (process.env.NODE_ENV === "production") {
-  app.use(express.static("public"));
-}
-// DB Setup (connect mongolab cloud management and instance of mongodb)
-databaseUrl = (process.env.MONGOLAB || 'mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4');
-// databaseUrl = ('mongodb://192.168.99.100/Contact');
-var collections = ["feedback"];
+// Data parsing
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
 
-// Hook mongojs config to db variable
-var db = mongojs(databaseUrl, collections);
-
-// Log any mongojs errors to console
-db.on("error", (error) => {
-  console.log("Database Error:", error);
+// post route
+app.post('/submit', (req, res) => {
+    const post = new Post({
+        name: req.body.name,
+        message: req.body.message
+    });
+    console.log("Data:", post);
+    post.save()
+    .then(data => {
+        res.json(data);
+    }).catch(err => {
+        res.json(err)
+    });
 });
 
-// Routes
-// ======
+// Connect to DB
+mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology: true },()=> console.log('connected to BD!'));
 
-// Simple index route
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname + "./public/index.html"));
-});
+// module.exports = router;
 
-// Handle form submission, save submission to mongodb
-app.post("/submit", (req, res) => {
-  // console.log(req.body);
-  // Insert the result into the feedbacks collection
-  db.feedbacks.insert(req.body, (error, saved) => {
-    // console.log(saved);
-    // Log any errors
-    if (error) {
-      console.log(error);
-    }
-    else {
-      // Otherwise, send the result back to the browser
-      // This will fire off the success function of the ajax request
-      res.json(saved);
-    }
-  });
-});
-
-// Listen on port 3000
-const port = process.env.PORT || 3000;
-// const server = http.createServer(app);
-app.listen(port);
-console.log("Server listening live on:", port);
-
+// Listen to port
+const Port = process.env.PORT || 3000;
+app.listen(Port);
+console.log('Server is listenign live on', Port);
