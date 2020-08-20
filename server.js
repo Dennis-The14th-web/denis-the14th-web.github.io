@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
 // post route
-app.post('/submit', (req, res) => {
+app.post('/', (req, res) => {
     const post = new Post({
         name: req.body.name,
         message: req.body.message

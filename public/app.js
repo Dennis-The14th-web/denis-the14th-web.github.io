@@ -10,7 +10,7 @@ $("#btn-submit").on("click", (e) => {
       message,
     };
 
-    $.post('/submit', data, () => {
+    $.post('/', data, () => {
 
       // show alert
      document.querySelector(".alert").style.display = "block" ;
