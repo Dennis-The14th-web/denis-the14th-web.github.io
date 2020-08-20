@@ -15,7 +15,7 @@ $("#btn-submit").on("click", (e) => {
       // show alert
      document.querySelector(".alert").style.display = "block" ;
   
-  // hide alert after three seconds
+  // hide alert after four seconds
      setTimeout(()=>{
      document.querySelector(".alert").style.display = "none" ;
      },4000);

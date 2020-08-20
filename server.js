@@ -1,4 +1,5 @@
 const express = require('express');
+const http = require('http');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const Post = require('./models/Post');
@@ -43,7 +44,8 @@ mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology
 
 // module.exports = router;
 
-// Listen to port
+// Listen to port and spin server
 const Port = process.env.PORT || 3000;
-app.listen(Port);
+const server = http.createServer(app);
+server.listen(Port);
 console.log('Server now listening on PORT',Port)
