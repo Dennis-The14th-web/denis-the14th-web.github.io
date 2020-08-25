@@ -45,7 +45,7 @@ mongoose.connect(process.env.DB_URI, { useNewUrlParser: true, useUnifiedTopology
 // module.exports = router;
 
 // Listen to port and spin server
-const Port = process.env.PORT || 3000;
+const Port = process.env.PORT || 5000;
 const server = http.createServer(app);
 server.listen(Port);
 console.log('Server now listening on PORT',Port)
