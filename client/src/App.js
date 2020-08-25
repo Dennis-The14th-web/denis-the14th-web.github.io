@@ -1,20 +1,27 @@
-import React from 'react';
+import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 import './App.css';
 import Nav from '../src/components/Nav';
 import Main from './components/Main';
 import Footer from '../src/components/Footer';
-import Contact from '../src/components/Contact';
+import Form from './components/Form';
+// import { render } from 'react-dom';
 
-function App() {
+class App extends Component {
+  
+  onSubmit = fields => {
+    console.log('App comp got: ', fields);
+  };
+  render() {
   return (
     <div className="App">
       <Nav />
       <Main />
-      <Contact />
+      <Form onSubmit={fields => this.onSubmit(fields)} />
       <Footer />
     </div>
   );
+};
 }
 
 export default App;
