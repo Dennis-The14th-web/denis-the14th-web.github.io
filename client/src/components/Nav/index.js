@@ -20,7 +20,7 @@ class Nav extends Component {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={1000}
             >
                 <li className="nav-item active">
               <a className="nav-link scroll-control" href="#about">About<span classNameName="sr-only"></span></a>
@@ -33,7 +33,7 @@ class Nav extends Component {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={1000}
             >
                 <li className="nav-item active">
               <a className="nav-link scroll-control" href="#projects">Projects</a>
@@ -46,7 +46,7 @@ class Nav extends Component {
             spy={true}
             smooth={true}
             offset={-70}
-            duration={500}
+            duration={1000}
             >
                 <li className="nav-item active">
                 <a className="nav-link scroll-control" href="#contact">Feedback</a>
