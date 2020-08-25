@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const Post = require('./models/Post');
 
-require('dotenv/config');
+// require('dotenv/config');
 
 // Initialize express
 const app = express();

@@ -2,7 +2,7 @@
   "name": "denis-the14th-web.github.io",
   "version": "1.0.0",
   "description": "bundler",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "concurrently \"if-env NODE_ENV=production\" \"cd server && node server.js\" \"cd client && npm run start\"",
     "start:prod": "concurrently \"if-env NODE_ENV=production\" \"cd server && node server.js\" \"cd client && npm run start\"",
@@ -12,16 +12,9 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Dennis-The14th-web/denis-the14th-web.github.io.git"
-  },
+ 
   "author": "Dennis",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Dennis-The14th-web/denis-the14th-web.github.io/issues"
-  },
-  "homepage": "https://github.com/Dennis-The14th-web/denis-the14th-web.github.io#readme",
   "dependencies": {
     "concurrently": "^5.3.0",
     "express": "^4.17.1",
