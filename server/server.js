@@ -35,7 +35,7 @@ app.post('/', (req, res) => {
     });
 });
 
-// Connect to DB via prod or dev
+// Connect home to DB via prod 
 if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
   }

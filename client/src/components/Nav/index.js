@@ -9,7 +9,16 @@ class Nav extends Component {
 
         return (
         <nav className="navbar navbar-expand-lg navbar-light sticky-top">
-        <a className="navbar-brand scroll-control" href="#portfolio" id="logo"><small>dennis</small> portfolio</a>
+            <Link
+            activeClass='active'
+            to='portfolio'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={1000}
+            >
+           <a className="navbar-brand scroll-control" href="#portfolio" id="logo"><small>dennis</small> portfolio</a>
+            </Link>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" id="hamburger">
           <span className="navbar-toggler-icon"></span>
         </button>
