@@ -297,10 +297,9 @@ h2{
 
     .footer
 {
-    border-top: 2px solid rgb(228, 225, 55);
     font-size: .5em;
     text-align: center;
-    color: rgb(228, 225, 55);
+    color: #ffffff;
     font-weight: bolder;
 }
   }

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 
 
-class Form extends React.Component {
+class Form extends Component {
     state = {
         name: '',
         message: ''
