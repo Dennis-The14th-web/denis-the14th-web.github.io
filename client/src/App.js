@@ -7,12 +7,12 @@ import About from './components/About';
 import Portfolio from './components/Portfolio';
 import Contact from './components/Contact';
 import Footer from '../src/components/Footer';
-// import { render } from 'react-dom';
+
 
 class App extends Component {
   
   onSubmit = fields => {
-    console.log('App comp got: ', fields);
+    // console.log('App comp got: ', fields);
   };
   render() {
   return (
