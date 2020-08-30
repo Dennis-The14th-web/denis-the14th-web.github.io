@@ -40,11 +40,18 @@ class Portfolio extends Component {
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
+                    <a className="fa fa-github" 
+                    href="https://github.com/Dennis-The14th-web/DPD-Movies">
+                    </a><br />
+                    <p className="modalText">This is a Full stack web application that
+                    serves as a personal media library.</p>
+                    <a className="viewSite" href="https://pddmovieappthe14web.herokuapp.com/">
+                    VIEW SITE</a>
                 
-                <ButtonToolbar className='modalButton'>
+                <ButtonToolbar className="modalTool">
                 <Button
-                
-                variant='primary'
+                className='modalButton'
+                variant='success'
                 onClick={()=> this.setState
                 ({addModalShow: true})}>LERN MORE</Button>
 

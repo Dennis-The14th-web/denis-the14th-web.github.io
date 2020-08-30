@@ -266,10 +266,48 @@ h2{
     background-size: cover;
 }
 
-.modalButton {
+.modalText {
+    text-align: center;
+    font-weight: 600;
+}
+
+.viewSite {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 18px;
+    font-weight: 800;
+    margin: 5px;
+    padding: 3px;
+    /* background: #808000; */
+}
+
+.viewSite:hover {
+    font-family: 'Notable', sans-serif;
+    text-decoration-line: none;
+    color: #91640F;
+}
+
+.modalTool {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modalButton {
+    background-color: #808000;
+}
+
+.modalButton:hover {
+    font-family: 'Notable', sans-serif;
+    background-color:  #a9a9a9;
+    color: #91640F;
+    font-weight: bolder;
+}
+
+.tech, .details {
+    font-weight: 600;
+    text-decoration-line: underline;
 }
 
 .pjTitle {
