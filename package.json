@@ -12,13 +12,13 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "cd client && npm run build"
   },
- 
   "author": "Dennis",
   "license": "ISC",
   "dependencies": {
     "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
-    "mongoose": "^5.10.0"
+    "mongoose": "^5.10.0",
+    "react-flippy": "^0.1.5"
   }
 }
