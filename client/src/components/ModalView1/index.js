@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import {Modal, Button, Row, Col} from 'react-bootstrap';
 
 
-export class ModalView extends Component {
+export class ModalView1 extends Component {
 
   // constructor(props){
   //   super(props); 
@@ -20,7 +20,7 @@ export class ModalView extends Component {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            DPD MOVIES
+            SPORTS HUB
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -29,24 +29,21 @@ export class ModalView extends Component {
             <Col sm={8}>
             <p>
               <h5 className="details">APP DETAILS</h5><br/>
-              DPD-Movies is a Full stack web application
-              that serves as a personal media library
-              to keep track of movies desired to watch
-              and those watched already. We applied the
-              CRUD (Create, Read, Update and Delete) 
-              method in this application to get it's
-              required results.<br/> We worked as a team
-              in building every aspect of this application.
-              From frontend to the back end.
+              This app is a MERN Stack application.
+              The Sportshub basically is a sports 
+              app that pulls its information from API 
+              calls. There is the article, post and comment 
+              section as well as the live score for 4 different 
+              sports section. User gets to sign up and then log 
+              in so they can gain access to the post and comment 
+              section features.
           </p>
             </Col>
             <Col sm={4}>
               <h5 className="tech">TECHNOLOGIES</h5><br/>
-              MySQL.<br/> Express.<br/>
-              Handlebars.<br/> Node. <br/> OMDB API.
-              <br/>CSS <br/> Node package manager. (NPM)
-              <br/> IMDB API. <br/> Sequelize (ORM).<br/>
-              Heroku.
+              javaScript(ES6).<br/>Heroku. <br/>USSN API.<br/>
+              Bootsrap4.<br/>Font Awesome. <br/>Trix rich text editor.
+              
             </Col>
           </Row>
           

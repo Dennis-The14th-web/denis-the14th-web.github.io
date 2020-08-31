@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import {Modal, Button, Row, Col} from 'react-bootstrap';
 
 
-export class ModalView extends Component {
+export class ModalView4 extends Component {
 
-  // constructor(props){
-  //   super(props); 
-  // }
+//   constructor(props){
+//     super(props); 
+//   }
 
   render(){
     
@@ -20,7 +20,7 @@ export class ModalView extends Component {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            DPD MOVIES
+            TRAIN SCHEDULER
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -29,24 +29,17 @@ export class ModalView extends Component {
             <Col sm={8}>
             <p>
               <h5 className="details">APP DETAILS</h5><br/>
-              DPD-Movies is a Full stack web application
-              that serves as a personal media library
-              to keep track of movies desired to watch
-              and those watched already. We applied the
-              CRUD (Create, Read, Update and Delete) 
-              method in this application to get it's
-              required results.<br/> We worked as a team
-              in building every aspect of this application.
-              From frontend to the back end.
+              Train scheduler is an application that
+              incorporates Firebase database to host
+              arrival and departure data. Providing
+              up-to-date information about various trains,
+              namely their arrival times.
           </p>
             </Col>
             <Col sm={4}>
               <h5 className="tech">TECHNOLOGIES</h5><br/>
-              MySQL.<br/> Express.<br/>
-              Handlebars.<br/> Node. <br/> OMDB API.
-              <br/>CSS <br/> Node package manager. (NPM)
-              <br/> IMDB API. <br/> Sequelize (ORM).<br/>
-              Heroku.
+              HTML5.<br/>CSS3 <br/> Bootstrap.<br/>
+              jQuery.<br/> Moment.js. <br/> FirebaseDB. 
             </Col>
           </Row>
           

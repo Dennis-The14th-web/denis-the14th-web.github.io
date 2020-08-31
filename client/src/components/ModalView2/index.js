@@ -2,11 +2,11 @@ import React, {Component} from 'react';
 import {Modal, Button, Row, Col} from 'react-bootstrap';
 
 
-export class ModalView extends Component {
+export class ModalView2 extends Component {
 
-  // constructor(props){
-  //   super(props); 
-  // }
+//   constructor(props){
+//     super(props); 
+//   }
 
   render(){
     
@@ -20,7 +20,7 @@ export class ModalView extends Component {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            DPD MOVIES
+            TRIVIA
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -29,24 +29,19 @@ export class ModalView extends Component {
             <Col sm={8}>
             <p>
               <h5 className="details">APP DETAILS</h5><br/>
-              DPD-Movies is a Full stack web application
-              that serves as a personal media library
-              to keep track of movies desired to watch
-              and those watched already. We applied the
-              CRUD (Create, Read, Update and Delete) 
-              method in this application to get it's
-              required results.<br/> We worked as a team
-              in building every aspect of this application.
-              From frontend to the back end.
+              I create a trivia form with multiple-choice
+              options The player will have a limited amount
+              of time to finish the quiz. The game ends when
+              the time runs out. The page will reveal the number
+              of questions that players answer correctly and
+              incorrectly. The player can only select one answer
+              per question also I added a countdown timer and restart button.
           </p>
             </Col>
             <Col sm={4}>
               <h5 className="tech">TECHNOLOGIES</h5><br/>
-              MySQL.<br/> Express.<br/>
-              Handlebars.<br/> Node. <br/> OMDB API.
-              <br/>CSS <br/> Node package manager. (NPM)
-              <br/> IMDB API. <br/> Sequelize (ORM).<br/>
-              Heroku.
+              HTML5. <br/> CSS3. <br/> bootstrap. <br/>
+              jQuery. <br/> Googlefonts.
             </Col>
           </Row>
           

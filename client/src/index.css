@@ -248,7 +248,7 @@ h2{
     background-size: cover;
 }
 #frontside4 {
-    background: url('/images/databaseimage.photo.jpg');
+    background: url('/images/train-image.jpg');
     width: 100%;
     min-height: 250px;
     justify-content: stretch;
@@ -305,7 +305,7 @@ h2{
     font-weight: bolder;
 }
 
-.tech, .details {
+.details, .tech {
     font-weight: 600;
     text-decoration-line: underline;
 }

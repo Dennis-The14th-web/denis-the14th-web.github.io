@@ -3,21 +3,36 @@ import Flippy, { FrontSide, BackSide } from 'react-flippy';
 import { Button, ButtonToolbar, Container } from 'react-bootstrap';
 import {Row, Col} from 'react-bootstrap';
 import { ModalView } from '../ModalView';
+import { ModalView1 } from '../ModalView1';
+import { ModalView2 } from '../ModalView2';
+import { ModalView3 } from '../ModalView3';
+import { ModalView4 } from '../ModalView4';
+import { ModalView5 } from '../ModalView5';
 
 
 
 class Portfolio extends Component {
     constructor(props){
         super(props);
-        this.state={addModalShow : false} 
+        this.state={addModalShow : false}
+        this.state={addModalShow1 : false}
+        this.state={addModalShow2 : false}
+        this.state={addModalShow3 : false}
+        this.state={addModalShow4 : false}
+        this.state={addModalShow5 : false}
     }
 
     render() {
         let addModalClose = () => this.setState({addModalShow : false})
+        let addModalClose1 = () => this.setState({addModalShow1 : false})
+        let addModalClose2= () => this.setState({addModalShow2 : false})
+        let addModalClose3 = () => this.setState({addModalShow3 : false})
+        let addModalClose4 = () => this.setState({addModalShow4 : false})
+        let addModalClose5 = () => this.setState({addModalShow5 : false})
         return (
 
 
-    <Container class="projects-container section-container p-3" id="projects">
+    <Container className="projects-container section-container p-3" id="projects">
     <h2 className="header">PROJECTS </h2>
 
     <Row>
@@ -43,8 +58,7 @@ class Portfolio extends Component {
                     <a className="fa fa-github" 
                     href="https://github.com/Dennis-The14th-web/DPD-Movies">
                     </a><br />
-                    <p className="modalText">This is a Full stack web application that
-                    serves as a personal media library.</p>
+                    <p className="modalText">This is a Full-stack web application.</p>
                     <a className="viewSite" href="https://pddmovieappthe14web.herokuapp.com/">
                     VIEW SITE</a>
                 
@@ -53,21 +67,16 @@ class Portfolio extends Component {
                 className='modalButton'
                 variant='success'
                 onClick={()=> this.setState
-                ({addModalShow: true})}>LERN MORE</Button>
+                ({addModalShow: true})}>LEARN MORE</Button>
 
-                <ModalView
-                show={this.state.addModalShow}
-                onHide={addModalClose}
-                />
+                <ModalView show={this.state.addModalShow}onHide={addModalClose}/>
 
                 </ButtonToolbar>
-                
-      
                 </BackSide>
                 </Flippy>
     </Col>
     <Col sm>
-    <h5 className='pjTitle'><b>SPORT HUB</b></h5>
+    <h5 className='pjTitle'><b>SPORTS HUB</b></h5>
         <Flippy
                flipOnHover={true} // default false
                flipOnClick={false} // default false
@@ -82,20 +91,25 @@ class Portfolio extends Component {
               //   backgroundColor: '#41669d',
              // }}
                 >
-                RICK
+               
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
-
-                <ButtonToolbar className='modalButton'>
-                <Button
+                <a className="fa fa-github" 
+                href="https://github.com/Dennis-The14th-web/SportsHub">
+                </a><br />
+                <p className="modalText">This is a MERN-Stack web application.</p>
+                <a className="viewSite" href="https://sportshubdevteam.herokuapp.com/">
+                VIEW SITE</a>  
+                <ButtonToolbar className="modalTool">
+                <Button className='modalButton'
                 variant='primary'
                 onClick={()=> this.setState
-                ({addModalShow: true})}>LERN MORE</Button>
+                ({addModalShow1: true})}>LEARN MORE</Button>
 
-                <ModalView
-                show={this.state.addModalShow}
-                onHide={addModalClose}
+                <ModalView1
+                show={this.state.addModalShow1}
+                onHide={addModalClose1}
                 />
 
                 </ButtonToolbar>
@@ -118,20 +132,25 @@ class Portfolio extends Component {
               //   backgroundColor: '#41669d',
              // }}
                 >
-                RICK
+                
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
-
-                <ButtonToolbar className='modalButton'>
-                <Button
+                <a className="fa fa-github" 
+                href="https://github.com/Dennis-The14th-web/TriviaGame">
+                </a><br />
+                <p className="modalText">This is a Frontend web application.</p>
+                <a className="viewSite" href="https://dennis-the14th-web.github.io/TriviaGame/">
+                VIEW SITE</a>
+                <ButtonToolbar className="modalTool">
+                <Button className='modalButton'
                 variant='primary'
                 onClick={()=> this.setState
-                ({addModalShow: true})}>LERN MORE</Button>
+                ({addModalShow2: true})}>LEARN MORE</Button>
 
-                <ModalView
-                show={this.state.addModalShow}
-                onHide={addModalClose}
+                <ModalView2
+                show={this.state.addModalShow2}
+                onHide={addModalClose2}
                 />
 
                 </ButtonToolbar>
@@ -156,20 +175,25 @@ class Portfolio extends Component {
               //   backgroundColor: '#41669d',
              // }}
                 >
-                RICK
+               
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
-
-                <ButtonToolbar className='modalButton'>
-                <Button
+                <a className="fa fa-github" 
+                href="https://github.com/Dennis-The14th-web/TriviaGame">
+                </a><br />
+                <p className="modalText">This is a React-Frontend application.</p>
+                <a className="viewSite" href="https://dennis-the14th-web.github.io/TriviaGame/">
+                VIEW SITE</a>
+                <ButtonToolbar className="modalTool">
+                <Button className='modalButton'
                 variant='primary'
                 onClick={()=> this.setState
-                ({addModalShow: true})}>LERN MORE</Button>
+                ({addModalShow3: true})}>LEARN MORE</Button>
 
-                <ModalView
-                show={this.state.addModalShow}
-                onHide={addModalClose}
+                <ModalView3
+                show={this.state.addModalShow3}
+                onHide={addModalClose3}
                 />
 
                 </ButtonToolbar>
@@ -192,22 +216,27 @@ class Portfolio extends Component {
               //   backgroundColor: '#41669d',
              // }}
                 >
-                RICK
+                
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
-
-                <ButtonToolbar className='modalButton'>
-                <Button
+                <a className="fa fa-github" 
+                href="https://github.com/Dennis-The14th-web/Train-Scheduler">
+                </a><br />
+                <p className="modalText">This is a Full-stack application.</p>
+                <a className="viewSite" href="https://dennis-the14th-web.github.io/Train-Scheduler/">
+                VIEW SITE</a>
+                <ButtonToolbar className="modalTool">
+                <Button className='modalButton'
                 variant='primary'
                 onClick={()=> this.setState
-                ({addModalShow: true})}>LERN MORE</Button>
+                ({addModalShow4: true})}>LEARN MORE</Button>
 
-                <ModalView
-                show={this.state.addModalShow}
-                onHide={addModalClose}
+                <ModalView4
+                show={this.state.addModalShow4}
+                onHide={addModalClose4}
                 />
-
+                
                 </ButtonToolbar>
       
                 </BackSide>
@@ -228,20 +257,25 @@ class Portfolio extends Component {
               //   backgroundColor: '#41669d',
              // }}
                 >
-                RICK
+                
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
-
-                <ButtonToolbar className='modalButton'>
-                <Button
+                <a className="fa fa-github" 
+                href="https://github.com/Dennis-The14th-web/GifTastic">
+                </a><br />
+                <p className="modalText">This is a Frontend application.</p>
+                <a className="viewSite" href="https://dennis-the14th-web.github.io/GifTastic/">
+                VIEW SITE</a>
+                <ButtonToolbar className="modalTool">
+                <Button className='modalButton'
                 variant='primary'
                 onClick={()=> this.setState
-                ({addModalShow: true})}>LERN MORE</Button>
+                ({addModalShow5: true})}>LEARN MORE</Button>
 
-                <ModalView
-                show={this.state.addModalShow}
-                onHide={addModalClose}
+                <ModalView5
+                show={this.state.addModalShow5}
+                onHide={addModalClose5}
                 />
 
                 </ButtonToolbar>
@@ -250,8 +284,7 @@ class Portfolio extends Component {
                 </Flippy></Col>
   </Row>
 </Container>
-            
-        
+
         )
     }
 
