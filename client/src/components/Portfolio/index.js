@@ -40,7 +40,7 @@ class Portfolio extends Component {
         <h5 className='pjTitle'><b>DPD MOVIES</b></h5>
     <Flippy
                flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
@@ -79,7 +79,7 @@ class Portfolio extends Component {
     <h5 className='pjTitle'><b>SPORTS HUB</b></h5>
         <Flippy
                flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
@@ -120,7 +120,7 @@ class Portfolio extends Component {
     <h5 className='pjTitle'><b>TRIVIA</b></h5>
         <Flippy
                flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
@@ -163,7 +163,7 @@ class Portfolio extends Component {
     <h5 className='pjTitle'><b>CLICKY REACT</b></h5>
         <Flippy
                flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
@@ -204,7 +204,7 @@ class Portfolio extends Component {
     <h5 className='pjTitle'><b>TRAIN SCHEDULER</b></h5>
         <Flippy
                flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
@@ -245,7 +245,7 @@ class Portfolio extends Component {
     <h5 className='pjTitle'><b>gifKOLLECTIONZ</b></h5>
         <Flippy
                flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
