@@ -36,7 +36,7 @@ class Portfolio extends Component {
     <h2 className="header">PROJECTS </h2>
 
     <Row>
-    <Col sm>
+    <Col lg>
         <h5 className='pjTitle'><b>DPD MOVIES</b></h5>
     <Flippy
                flipOnHover={true} // default false
@@ -75,7 +75,7 @@ class Portfolio extends Component {
                 </BackSide>
                 </Flippy>
     </Col>
-    <Col sm>
+    <Col lg>
     <h5 className='pjTitle'><b>SPORTS HUB</b></h5>
         <Flippy
                flipOnHover={true} // default false
@@ -115,8 +115,9 @@ class Portfolio extends Component {
                 </ButtonToolbar>
       
                 </BackSide>
-                </Flippy></Col>
-    <Col sm>
+                </Flippy>
+                </Col>
+     <Col lg>
     <h5 className='pjTitle'><b>TRIVIA</b></h5>
         <Flippy
                flipOnHover={true} // default false
@@ -156,10 +157,11 @@ class Portfolio extends Component {
                 </ButtonToolbar>
       
                 </BackSide>
-                </Flippy></Col>
-  </Row>
-  <Row>
-    <Col sm>
+                </Flippy>
+                </Col>
+    </Row>
+   <Row>
+     <Col lg>
     <h5 className='pjTitle'><b>CLICKY REACT</b></h5>
         <Flippy
                flipOnHover={true} // default false
@@ -199,8 +201,9 @@ class Portfolio extends Component {
                 </ButtonToolbar>
       
                 </BackSide>
-                </Flippy></Col>
-    <Col sm>
+                </Flippy>
+                </Col>
+     <Col lg>
     <h5 className='pjTitle'><b>TRAIN SCHEDULER</b></h5>
         <Flippy
                flipOnHover={true} // default false
@@ -240,8 +243,9 @@ class Portfolio extends Component {
                 </ButtonToolbar>
       
                 </BackSide>
-                </Flippy></Col>
-    <Col sm>
+                </Flippy>
+                </Col>
+    <Col lg>
     <h5 className='pjTitle'><b>gifKOLLECTIONZ</b></h5>
         <Flippy
                flipOnHover={true} // default false
@@ -281,8 +285,9 @@ class Portfolio extends Component {
                 </ButtonToolbar>
       
                 </BackSide>
-                </Flippy></Col>
-  </Row>
+                </Flippy>
+                </Col>
+   </Row>
 </Container>
 
         )

@@ -12,8 +12,8 @@ class About extends Component {
             <Container className='section-container' id='about'>
                 <h2 className="header">ABOUT</h2>
                 <Row>
-                    <Col sm={2}></Col>
-                    <Col sm={8}>
+                    <Col lg={2}></Col>
+                    <Col lg={8}>
                     <p className="paragraph">
                 I'm a full Stack web developer able to build
                 a web presence from the ground up - from Front
@@ -55,7 +55,7 @@ class About extends Component {
                 </a> or leave a message in the contact section. 
                </p>
                     </Col>
-                    <Col sm={2}></Col>
+                    <Col lg={2}></Col>
                 </Row>
             </Container>
         )

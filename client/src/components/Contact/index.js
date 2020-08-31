@@ -43,9 +43,9 @@ class Contact extends Component {
             <hr id="contactline"/>
             <div className="alert">Message sent successfully.</div>
           <Row>
-            <Col sm={2}></Col>
+            <Col log={2}></Col>
             
-            <Col sm={8}>
+            <Col lg={8}>
             <Form action="/" method="post" id="contactForm">
     <Form.Group controlId="formBasicName">
     <Form.Label>Name</Form.Label>
@@ -87,7 +87,7 @@ class Contact extends Component {
 </Form>
 </Col>
 
-<Col sm={2}></Col>
+<Col lg={2}></Col>
 </Row>
 </Container>
 </div>

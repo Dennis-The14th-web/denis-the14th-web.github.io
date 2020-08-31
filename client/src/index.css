@@ -173,7 +173,7 @@ h2{
     line-height: 23px;
 }
 
-#projects {
+.projects-container {
     font-family: "Space Mono", Arial, serif;
 	position:relative;
     backface-visibility: hidden;
