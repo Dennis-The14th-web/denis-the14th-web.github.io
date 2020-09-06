@@ -73,7 +73,7 @@ class Contact extends Component {
   
   <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Label>Message</Form.Label>
-    <Form.Control as="textarea" rows="8"
+    <Form.Control as="textarea" rows="6"
      placeholder="Your message"
      value={this.state.message} 
      onChange={e => this.setState({ message: e.target.value})} required
