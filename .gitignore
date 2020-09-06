@@ -1,2 +1,3 @@
 /client/yarn.lock
 node_modules
+/server/keys.js
