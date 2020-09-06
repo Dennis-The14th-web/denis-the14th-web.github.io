@@ -4,10 +4,6 @@ import {Modal, Button, Row, Col} from 'react-bootstrap';
 
 export class ModalView1 extends Component {
 
-  // constructor(props){
-  //   super(props); 
-  // }
-
   render(){
     
     return(

@@ -182,10 +182,10 @@ class Portfolio extends Component {
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
                 <a className="fa fa-github" 
-                href="https://github.com/Dennis-The14th-web/TriviaGame">
+                href="https://github.com/Dennis-The14th-web/clickers-react">
                 </a><br />
                 <p className="modalText">This is a React-Frontend application.</p>
-                <a className="viewSite" href="https://dennis-the14th-web.github.io/TriviaGame/">
+                <a className="viewSite" href="https://dennis-the14th-web.github.io/clickers-react">
                 VIEW SITE</a>
                 <ButtonToolbar className="modalTool">
                 <Button className='modalButton'
