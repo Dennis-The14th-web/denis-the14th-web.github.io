@@ -2,7 +2,9 @@ const express = require('express');
 const http = require('http');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
-const Post = require('./models/Post');
+require('./models/Post');
+const Feedback = mongoose.model('Feedback');
+
 
 // require('dotenv/config');
 
@@ -22,17 +24,23 @@ app.use(express.json());
 
 // post route
 app.post('/', (req, res) => {
-    const post = new Post({
-        name: req.body.name,
-        message: req.body.message
-    });
-    // console.log("Data:", post);
-    post.save()
-    .then(data => {
-        res.json(data);
-    }).catch(err => {
-        res.json(err)
-    });
+    const { name, email, message } = req.body
+    if (!name || !email || !message) {
+       return res.status(422).json({err: "please fill all field"})
+    }
+    const feedback = new Feedback({
+        name,
+        email,
+        message
+    })
+
+    feedback.save()
+    .then(feedback=>{
+        res.json({message: "successfully saved"})
+    })
+    .catch(err=>{
+        (err)
+    })
 });
 
 // Connect home to DB via prod 
@@ -40,7 +48,9 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
   }
 
-mongoose.connect(process.env.MONGOLAB_URI ||'mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4', { useNewUrlParser: true, useUnifiedTopology: true }, () => console.log("connected to DB"));
+mongoose.connect(process.env.MONGOLAB_URI ||
+'mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4',
+{ useNewUrlParser: true, useUnifiedTopology: true }, () => console.log("connected to DB"));
 
 // module.exports = router;
 

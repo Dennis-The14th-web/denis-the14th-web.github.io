@@ -7,6 +7,10 @@ const PostSchema = mongoose.Schema({
         type: String,
         required: true
     },
+    email:{
+        type: String,
+        required: true
+    },
     message:{
         type: String,
         required: true
@@ -18,7 +22,7 @@ const PostSchema = mongoose.Schema({
 });
 
 // This creates our model from the above schema, using mongoose's model method
-module.exports = mongoose.model('Feedback', PostSchema);
+mongoose.model('Feedback', PostSchema);
 
 
 

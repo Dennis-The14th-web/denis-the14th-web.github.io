@@ -10,17 +10,19 @@ class Contact extends Component {
         email: '',
         message: ''
     }
-
+    
     onSubmit = e => {
         e.preventDefault();
         this.props.onSubmit(this.state);
-        console.log(this.state);
+        // console.log(this.state);
         this.setState({
             name: '',
             email: '',
             message: ''
         })
-        $.post('/', this.state, () =>  {     
+    
+        $.post('/', this.state, () =>  {
+         
        // show alert
            document.querySelector(".alert").style.display = "block" ;
         
@@ -42,6 +44,7 @@ class Contact extends Component {
             <h2 id="header2">CONTACT</h2>
             <hr id="contactline"/>
             <div className="alert">Message sent successfully.</div>
+            {/* <div className="alert-err">Please fill out all fields.</div> */}
           <Row>
             <Col log={2}></Col>
             
@@ -49,18 +52,18 @@ class Contact extends Component {
             <Form action="/" method="post" id="contactForm">
     <Form.Group controlId="formBasicName">
     <Form.Label>Name</Form.Label>
-    <Form.Control type="name" id="name" placeholder="Enter name"
+    <Form.Control type="name" placeholder="Enter name"
     value={this.state.name} 
-    onChange={e => this.setState({ name: e.target.value})} 
+    onChange={e => this.setState({ name: e.target.value})} required
     />
   </Form.Group>
 
 
   <Form.Group controlId="formBasicEmail">
     <Form.Label>Email address</Form.Label>
-    <Form.Control type="message" id="email" placeholder="Enter email"
+    <Form.Control type="email" placeholder="Enter email"
     value={this.state.email} 
-    onChange={e => this.setState({ email: e.target.value})}
+    onChange={e => this.setState({ email: e.target.value})} required
      />
     <Form.Text className="text-muted">
       We'll never share your email with anyone else.
@@ -71,9 +74,9 @@ class Contact extends Component {
   <Form.Group controlId="exampleForm.ControlTextarea1">
     <Form.Label>Message</Form.Label>
     <Form.Control as="textarea" rows="8"
-     id="message" placeholder="Your message"
+     placeholder="Your message"
      value={this.state.message} 
-     onChange={e => this.setState({ message: e.target.value})}
+     onChange={e => this.setState({ message: e.target.value})} required
      />
   </Form.Group>
   {/* <Form.Group controlId="formBasicCheckbox">
@@ -91,8 +94,6 @@ class Contact extends Component {
 </Row>
 </Container>
 </div>
-            
-    
         )
     };
 }

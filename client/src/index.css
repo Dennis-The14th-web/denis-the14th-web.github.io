@@ -19,7 +19,7 @@ nav {
   }
   nav ul {
     list-style: none;
-    text-align: center;
+    text-align: left;
   }
   nav ul li {
     display: inline-block;
@@ -168,9 +168,10 @@ h2{
 }
 
 .paragraph{
-    font-family: "Space Mono", Arial, serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+    padding: 2px;
     text-align: center;
-    line-height: 23px;
 }
 
 .projects-container {
@@ -372,6 +373,11 @@ h2{
     margin-bottom: 5px;
 }
 
+#contactForm {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 19px;
+}
+
 .alert {
     text-align: center;
     padding: 10px;
@@ -427,6 +433,10 @@ h2{
         background: #E1E1E1;
         padding: 0;
         box-shadow: 0px 17px 0px #808000;
+      }
+      nav ul {
+        list-style: none;
+        text-align: center;
       }
     nav ul li {
         display: inline-block;
