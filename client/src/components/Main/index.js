@@ -12,9 +12,9 @@ class Main extends Component {
           <Row>
           <Col lg></Col>
           <Col lg>
-          <img id="photo" src="/images/hdshot.jpg" alt="headshot" className="center" />
+          <img id="photo" src="/images/headshot2.JPG" alt="headshot" className="center" />
           <h1 id="header">- Dennis Itua -</h1>
-          <h5 id="header1">Full Stack Web Developer</h5>   
+          <h5 id="header1">Full-Stack Web Developer</h5>   
           <a id="contact-me" className="center" href="/images/dennisresume.pdf">VIEW RESUME</a>                  
           </Col>
           <Col lg></Col>
