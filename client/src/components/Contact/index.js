@@ -44,7 +44,6 @@ class Contact extends Component {
             <h2 id="header2">CONTACT</h2>
             <hr id="contactline"/>
             <div className="alert">Message sent successfully.</div>
-            {/* <div className="alert-err">Please fill out all fields.</div> */}
           <Row>
             <Col log={2}></Col>
             

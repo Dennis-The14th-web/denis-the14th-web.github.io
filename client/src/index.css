@@ -130,7 +130,7 @@ nav {
 
 #contact-me {
     display: block;
-    background: rgb(228, 225, 55);
+    background: #a9a9a9;
     color: #0000ff;
     font-family: "Space Mono", Arial, serif;
     width: 50%;
@@ -170,7 +170,7 @@ h2{
 .paragraph{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 19px;
-    padding: 2px;
+    /* padding: 2px; */
     text-align: center;
 }
 
