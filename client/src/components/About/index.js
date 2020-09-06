@@ -45,7 +45,7 @@ class About extends Component {
                Proficient in computer science applied to javaScript.
                Databases (MySQL, MongoDB, Firebase "Docker-Containerized"). 
                Server side development (Node.js, Express). 
-               Browser based technologies (HTML, CSS, Bootstrap,
+               Browser based technologies (HTML, CSS, Bootstrap, Materilize 
                javaScript, jQuery, React). Deployment (AWS, Heroku, Git). 
                Quality assurance (Writing Tests).
                <br />
