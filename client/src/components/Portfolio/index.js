@@ -58,7 +58,7 @@ class Portfolio extends Component {
                     <a className="fa fa-github" 
                     href="https://github.com/Dennis-The14th-web/DPD-Movies">
                     </a><br />
-                    <p className="modalText">This is a Full-stack web application.</p>
+                    <p className="modalText">This is a full-stack web application.</p>
                     <a className="viewSite" href="https://pddmovieappthe14web.herokuapp.com/">
                     VIEW SITE</a>
                 
@@ -76,7 +76,7 @@ class Portfolio extends Component {
                 </Flippy>
     </Col>
     <Col lg>
-    <h5 className='pjTitle'><b>SPORTS HUB</b></h5>
+    <h5 className='pjTitle'><b>CINEMA BINGE</b></h5>
         <Flippy
                flipOnHover={true} // default false
                flipOnClick={false} // default false
@@ -96,10 +96,10 @@ class Portfolio extends Component {
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
                 <a className="fa fa-github" 
-                href="https://github.com/Dennis-The14th-web/SportsHub">
+                href="https://github.com/Dennis-The14th-web/cinema-binge">
                 </a><br />
-                <p className="modalText">This is a MERN-Stack web application.</p>
-                <a className="viewSite" href="https://sportshubdevteam.herokuapp.com/">
+                <p className="modalText">This is a react-app frontend web application.</p>
+                <a className="viewSite" href="https://master.d1njrkfo9folbl.amplifyapp.com/">
                 VIEW SITE</a>  
                 <ButtonToolbar className="modalTool">
                 <Button className='modalButton'
@@ -140,7 +140,7 @@ class Portfolio extends Component {
                 <a className="fa fa-github" 
                 href="https://github.com/Dennis-The14th-web/TriviaGame">
                 </a><br />
-                <p className="modalText">This is a Frontend web application.</p>
+                <p className="modalText">This is a frontend web application.</p>
                 <a className="viewSite" href="https://dennis-the14th-web.github.io/TriviaGame/">
                 VIEW SITE</a>
                 <ButtonToolbar className="modalTool">
@@ -184,7 +184,7 @@ class Portfolio extends Component {
                 <a className="fa fa-github" 
                 href="https://github.com/Dennis-The14th-web/clickers-react">
                 </a><br />
-                <p className="modalText">This is a React-Frontend application.</p>
+                <p className="modalText">This is a react-app frontend web application.</p>
                 <a className="viewSite" href="https://dennis-the14th-web.github.io/clickers-react">
                 VIEW SITE</a>
                 <ButtonToolbar className="modalTool">
@@ -226,7 +226,7 @@ class Portfolio extends Component {
                 <a className="fa fa-github" 
                 href="https://github.com/Dennis-The14th-web/Train-Scheduler">
                 </a><br />
-                <p className="modalText">This is a Full-stack application.</p>
+                <p className="modalText">This is a full-stack web application.</p>
                 <a className="viewSite" href="https://dennis-the14th-web.github.io/Train-Scheduler/">
                 VIEW SITE</a>
                 <ButtonToolbar className="modalTool">
@@ -268,7 +268,7 @@ class Portfolio extends Component {
                 <a className="fa fa-github" 
                 href="https://github.com/Dennis-The14th-web/GifTastic">
                 </a><br />
-                <p className="modalText">This is a Frontend application.</p>
+                <p className="modalText">This is a frontend web application.</p>
                 <a className="viewSite" href="https://dennis-the14th-web.github.io/GifTastic/">
                 VIEW SITE</a>
                 <ButtonToolbar className="modalTool">

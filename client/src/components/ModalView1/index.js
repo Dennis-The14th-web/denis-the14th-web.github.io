@@ -16,7 +16,7 @@ export class ModalView1 extends Component {
       >
         <Modal.Header closeButton>
           <Modal.Title id="contained-modal-title-vcenter">
-            SPORTS HUB
+            CINEMA BINGE
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
@@ -25,20 +25,17 @@ export class ModalView1 extends Component {
             <Col sm={8}>
             <p>
               <h5 className="details">APP DETAILS</h5><br/>
-              This app is a MERN Stack application.
-              The Sportshub basically is a sports 
-              app that pulls its information from API 
-              calls. There is the article, post and comment 
-              section as well as the live score for 4 different 
-              sports section. User gets to sign up and then log 
-              in so they can gain access to the post and comment 
-              section features.
+              Cinema Binge is a simple frontend react-app movie
+              library. Which allows users to search and see their 
+              favorite movie information like year, rating, etc. 
+              This app pulls data from the OMDb with an API key 
+              and was also deployed using AWS Amplify.
           </p>
             </Col>
             <Col sm={4}>
               <h5 className="tech">TECHNOLOGIES</h5><br/>
-              javaScript(ES6).<br/>Heroku. <br/>USSN API.<br/>
-              Bootsrap4.<br/>Font Awesome. <br/>Trix rich text editor.
+              React-app.<br/>AWS Amplify. <br/>OMDb API.<br/>
+              Node.<br/>Font Awesome. <br/>axios.
               
             </Col>
           </Row>
