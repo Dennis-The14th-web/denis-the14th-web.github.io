@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('./models/Post');
 const Feedback = mongoose.model('Feedback');
-const {MONGOURI} = require('./keys');
+const { MONGOURI } = require('./keys');
 
 
 // require('dotenv/config');
