@@ -42,17 +42,17 @@ class About extends Component {
                </p>
 
                <p className="paragraph">
-               Proficient in Computer Science applied to JavaScript, 
-               Databases (MySQL, MongoDB, "Docker-Containerized"). 
-               Server Side Development (Node.js, Express, MERN Stack). 
-               Browser Based Technologies (HTML, CSS, Bootstrap,
-               JavaScript, jQuery, React). Deployment (Heroku, Git). 
-               Quality Assurance (Writing Tests).
+               Proficient in computer science applied to javaScript.
+               Databases (MySQL, MongoDB, Firebase "Docker-Containerized"). 
+               Server side development (Node.js, Express). 
+               Browser based technologies (HTML, CSS, Bootstrap,
+               JavaScript, jQuery, React). Deployment (AWS, Heroku, Git). 
+               Quality assurance (Writing Tests).
                <br />
-                 Please Kindly Email Me @ dennis.itua1@gmail.com
+                 Please kindly email me @ dennis.itua1@gmail.com
                  <a className="fa fa-envelope" 
                  href="mailto:dennis.itua1@gmail.com" id="emails">
-                </a> or leave a message in the contact section. 
+                </a> or leave a message in the contact section.
                </p>
                     </Col>
                     <Col lg={2}></Col>
