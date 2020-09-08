@@ -15,7 +15,7 @@ class Main extends Component {
           <img id="photo" src="/images/headshot2.JPG" alt="headshot" className="center" />
           <h1 id="header">- Dennis Itua -</h1>
           <h5 id="header1">Full-Stack Web Developer</h5>   
-          <a id="contact-me" className="center" href="/images/dennisresume1.pdf">VIEW RESUME</a>                  
+          <a id="contact-me" className="center" href="/images/dennisupdatedresume1.pdf">VIEW RESUME</a>                  
           </Col>
           <Col lg></Col>
           </Row>
