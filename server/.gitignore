@@ -91,6 +91,7 @@ jspm_packages/
 
 # TypeScript v1 declaration files
 typings/
+keys.js/
 
 # TypeScript cache
 *.tsbuildinfo

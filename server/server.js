@@ -49,7 +49,7 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
   }
 
-mongoose.connect(process.env.MONGOLAB_URI || "",
+mongoose.connect(process.env.MONGOLAB_URI,
 { useNewUrlParser: true, useUnifiedTopology: true },
  () => console.log("connected to DB"));
 
