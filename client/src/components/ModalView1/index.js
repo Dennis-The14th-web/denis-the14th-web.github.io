@@ -35,7 +35,7 @@ export class ModalView1 extends Component {
             <Col sm={4}>
               <h5 className="tech">TECHNOLOGIES</h5><br/>
               React-app.<br/>AWS Amplify. <br/>OMDb API.<br/>
-              IMDbID.<br/>Node.<br/>Font Awesome. <br/>axios.
+              IMDbID.<br/>Node.js.<br/>Font Awesome. <br/>axios.
               
             </Col>
           </Row>

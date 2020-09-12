@@ -39,7 +39,7 @@ export class ModalView3 extends Component {
             </Col>
             <Col sm={4}>
               <h5 className="tech">TECHNOLOGIES</h5><br/>
-              React<br/>HTML5.<br/> CSS.<br/>Node.
+              React<br/>HTML5.<br/> CSS.<br/>Node.js.
             </Col>
           </Row>
           

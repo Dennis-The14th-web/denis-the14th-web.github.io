@@ -43,7 +43,7 @@ export class ModalView extends Component {
             <Col sm={4}>
               <h5 className="tech">TECHNOLOGIES</h5><br/>
               MySQL.<br/> Express.<br/>
-              Handlebars.<br/> Node. <br/> OMDb API.<br />
+              Handlebars.<br/> Node.js. <br/> OMDb API.<br />
               IMDbID.<br/>CSS <br/> Constructor (MVC).
               <br/> TMDb API. <br/> Sequelize (ORM).<br/>
               Heroku.

@@ -41,7 +41,7 @@ export class ModalView2 extends Component {
             <Col sm={4}>
               <h5 className="tech">TECHNOLOGIES</h5><br/>
               React. <br/> Heroku. <br/> Materialize. <br/>
-              Express.<br/>Node.<br/>Font Awesome. 
+              Express.<br/>Node.js.<br/>Font Awesome. 
               <br/> MongoDB.
             </Col>
           </Row>
