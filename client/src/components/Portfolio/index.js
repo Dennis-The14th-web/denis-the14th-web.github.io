@@ -118,7 +118,7 @@ class Portfolio extends Component {
                 </Flippy>
                 </Col>
      <Col lg>
-    <h5 className='pjTitle'><b>TRIVIA</b></h5>
+    <h5 className='pjTitle'><b>INSTAMILLIGRAM</b></h5>
         <Flippy
                flipOnHover={true} // default false
                flipOnClick={false} // default false
@@ -138,10 +138,10 @@ class Portfolio extends Component {
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
                 <a className="fa fa-github" 
-                href="https://github.com/Dennis-The14th-web/TriviaGame">
+                href="https://github.com/Dennis-The14th-web/social-media-MERN-stack">
                 </a><br />
                 <p className="modalText">This is a frontend web application.</p>
-                <a className="viewSite" href="https://dennis-the14th-web.github.io/TriviaGame/">
+                <a className="viewSite" href="https://dennismernstackapp.herokuapp.com/signin">
                 VIEW SITE</a>
                 <ButtonToolbar className="modalTool">
                 <Button className='modalButton'
