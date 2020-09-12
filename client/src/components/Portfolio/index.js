@@ -140,7 +140,7 @@ class Portfolio extends Component {
                 <a className="fa fa-github" 
                 href="https://github.com/Dennis-The14th-web/social-media-MERN-stack">
                 </a><br />
-                <p className="modalText">This is a frontend web application.</p>
+                <p className="modalText">This is a MERN-Stack web application.</p>
                 <a className="viewSite" href="https://dennismernstackapp.herokuapp.com/signin">
                 VIEW SITE</a>
                 <ButtonToolbar className="modalTool">
