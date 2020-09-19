@@ -12,9 +12,8 @@ class Main extends Component {
           <Row>
           <Col lg></Col>
           <Col lg>
-          <h1 id="header"> Hello! <br/>Meet Dennis Itua,
-                           a full-stack web developer.</h1>
-          {/* <h5 id="header1">Full-Stack Web Developer</h5>                      */}
+          <div className="header11"><h3> Hello!</h3><h3><small> meet </small>Dennis Itua,</h3>
+          <h3 className="header12"><small>a full-stack web developer.</small></h3></div>
           </Col>
           <Col lg></Col>
           </Row>

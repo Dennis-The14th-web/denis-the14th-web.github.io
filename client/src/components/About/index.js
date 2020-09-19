@@ -11,7 +11,6 @@ class About extends Component {
 
             <Container className='section-container' id='about'>
                 <h2 className="header">ABOUT</h2>
-                <hr className="contactline"/>
                 <Row>
                 <Col lg={2}></Col>
                 <Col lg={8}>

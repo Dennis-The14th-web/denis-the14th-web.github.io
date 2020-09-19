@@ -34,7 +34,6 @@ class Portfolio extends Component {
 
     <Container className="projects-container section-container p-3" id="projects">
     <h2 className="header">PROJECTS </h2>
-    <hr className="contactline"/>
     <Row>
     <Col lg>
         <h5 className='pjTitle'><b>DPD MOVIES</b></h5>
