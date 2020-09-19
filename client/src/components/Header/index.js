@@ -12,10 +12,10 @@ class Header extends Component {
       
           <Navbar expand="lg" className="shift fixed-top" id="nav">
           <Navbar.Toggle className="toggle ml-auto" aria-controls="basic-navbar-nav" />  
-          <Navbar.Collapse className="collapse" id="basic-navbar-nav">
+          <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="nav mr-auto">
             
-            <Link className="link"
+            <Link
               activeClass='active'
               to='portfolio'
               spy={true}
@@ -28,7 +28,7 @@ class Header extends Component {
             
             </Link>
             
-            <Link className="link"
+            <Link
               activeClass='active'
               to='about'
               spy={true}
@@ -41,7 +41,7 @@ class Header extends Component {
                
               </Link>
                 
-              <Link className="link"
+              <Link
               activeClass='active'
               to='projects'
               spy={true}
@@ -54,7 +54,7 @@ class Header extends Component {
                 
               </Link>
             
-              <Link className="link"
+              <Link
               activeClass='active'
               to='contact'
               spy={true}
