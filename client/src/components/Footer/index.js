@@ -5,7 +5,7 @@ class Footer extends Component {
     render() {
 
         return (
-            <div className="footer fixed-bottom ">
+            <div className="footer">
             <div>
                 <a className="fa fa-linkedin-square" href="https://www.linkedin.com/in/dennis-itua-975b9055/"></a>
                 <a className="fa fa-github" href="https://github.com/Dennis-The14th-web"></a>

@@ -1,4 +1,4 @@
-
+/* 
 * {
     margin: 0; 
     padding: 0;
@@ -10,49 +10,63 @@ body, html {
     color: #0c0c0c;
 }
 
-nav {
+#nav {
     width: 100%;
     margin: 0 auto;
     background: #E1E1E1;
+    background: #FFF;
     padding: 0;
     box-shadow: 0px 5px 0px #808000;
   }
-  nav ul {
-    list-style: none;
-    text-align: left;
-  }
-  nav ul li {
+
+#brand {
+    background: url('/images/brand.jpg');
+    width: 70px;
+    min-height: 73px;
+    position:relative;
+    background-size: cover;
+}
+Nav.Link, strong{
+    
+  } 
+Nav.Link, strong {
     display: inline-block;
   }
-  nav ul li a {
+
+Nav.Link, strong{ 
     display: block;
     padding: 15px;
     text-decoration: none;
-    color: #0c0c0c;
+    list-style: none;
     font-weight: 800;
     text-transform: uppercase;
     margin: 0 10px;
   }
-  nav ul li a,
-  nav ul li a:after,
-  nav ul li a:before {
+Nav.Link, strong,
+Nav.Link, strong:after,
+Nav.Link, strong:before {
     transition: all .5s;
   }
-  nav ul li a:hover {
-    color: #555;
-  }
-  
+Nav.Link, strong:hover {
+    color: #EEE;
+    list-style: none !important;
+    list-style-type: none !important;
+    text-decoration: none !important;
+  } 
+   */
 
 /* SHIFT */
-.shift ul li a {
+/* .shift Nav.Link, strong {
     position:relative;
     z-index: 1;
   }
-.shift ul li a:hover {
+.shift Nav.Link, strong:hover {
     color: #91640F;
-    text-decoration-line: none;
+    text-decoration-line: none !important;
+    list-style: none !important;
+    list-style-type: none !important;
   }
-  .shift ul li a:after {
+.shift Nav.Link, strong:after {
     display: block;
     position: absolute;
     top: 0;
@@ -69,10 +83,13 @@ nav {
     opacity: 0;
     z-index: -1;
   }
-.shift ul li a:hover:after {
+.shift Nav.Link, strong:hover:after {
     opacity: 1;
     visibility: visible;
     height: 100%;
+    text-decoration: none !important;
+    list-style: none !important;
+    list-style-type: none !important;
   }
 
 .section-container{
@@ -90,7 +107,7 @@ nav {
     background:linear-gradient(transparent,  #e9e5e5 45%), url(/images/darkcollection03.jpg) no-repeat center; 
     backface-visibility: hidden;
 	background-size: cover;
-    /* box-shadow:0 12px 15px 0 #ffffff,0 17px 50px 0 #ffffff; */
+    box-shadow:0 12px 15px 0 #FFF,0 17px 50px 0 #FFF;
 }
 
 #photo {
@@ -102,8 +119,6 @@ nav {
     transform-style: preserve-3d;
     border-radius: 50%;
     display: block;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 #header{
@@ -129,10 +144,10 @@ nav {
 }
 
 #contact-me {
+    font-family: "Space Mono", Arial, serif;
     display: block;
     background: #a9a9a9;
     color: #0000ff;
-    font-family: "Space Mono", Arial, serif;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -158,11 +173,11 @@ nav {
     text-align: center;
     font-family: "Space Mono", Arial, serif;
     font-weight: 700;
-    /* margin-top: -5px; */
+    margin-top: -5px;
 }
 
 h2{
-    /* color: #ffffff; */
+    color: #ffffff;
     padding: 10px;
     font-weight: bolder;
 }
@@ -170,7 +185,7 @@ h2{
 .paragraph{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 19px;
-    /* padding: 2px; */
+    padding: 2px;
     text-align: center;
 }
 
@@ -253,7 +268,7 @@ h2{
     font-weight: 800;
     margin: 5px;
     padding: 3px;
-    /* background: #808000; */
+    background: #808000;
 }
 
 .viewSite:hover {
@@ -288,7 +303,7 @@ h2{
     text-align: center;
     padding: 5px;
     margin-bottom: 0;
-}
+} */
 
 /* .col-md-4{
     perspective: 1000px;
@@ -348,7 +363,7 @@ h2{
     
 } */
 
-.header{
+/* .header{
     font-family: "Space Mono", Arial, serif;
     font-weight: 700;
     color: #0c0c0c;
@@ -360,10 +375,8 @@ h2{
     font-family: "Space Mono", Arial, serif;
     color: #0c0c0c;
     position:relative;
-    /* min-height: 100%; */
     background-position: center;
     background-repeat: no-repeat;
-    /* backface-visibility: hidden; */
     background-size: cover;
 }
 
@@ -394,10 +407,11 @@ h2{
 
 .footer
 {
+    font-family: "Space Mono", Arial, serif;
     color: #0c0c0c;
-    background: #E1E1E1;
+    background: #FFF;
     text-align: center;
-    font-family: "Space Mono", Arial, serif;  
+    border-top: 2px solid #808000;   
 }
 
 .fa {
@@ -419,38 +433,13 @@ h2{
   
 .fa-github:hover {
     text-decoration-line: none;
-} 
+}  */
 
 
 /* responsive media queries */
-
+/* 
 @media only screen and (max-width: 600px) {
-    nav {
-        width: 100%;
-        min-height: 33px;
-        font-size: x-small;
-        margin: 0 auto;
-        background: #E1E1E1;
-        padding: 0;
-        box-shadow: 0px 17px 0px #808000;
-      }
-      nav ul {
-        list-style: none;
-        text-align: center;
-      }
-    nav ul li {
-        display: inline-block;
-      }
-      nav ul li a {
-        display: block;
-        padding: 10px;
-        text-decoration: none;
-        color: #0c0c0c;
-        font-weight: bolder;
-        text-transform: uppercase;
-        margin: 0 5px;
-      }
-
+   
       #header{
         font-family: "Kaushan Script", cursive;
         color: #0000ff;
@@ -486,4 +475,4 @@ h2{
     color: #0c0c0c;
     font-weight: bolder;
 }
-  }
+  } */

@@ -42,7 +42,7 @@ class Contact extends Component {
           <div className="container-contact flex section-container p-1" id="contact">
             <Container>
             <h2 id="header2">CONTACT</h2>
-            <hr id="contactline"/>
+            <hr className="contactline"/>
             <div className="alert">Message sent successfully.</div>
           <Row>
             <Col log={2}></Col>

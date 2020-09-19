@@ -1,84 +1,75 @@
 import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'react-scroll';
+import { Navbar, Nav } from 'react-bootstrap';
 
 
 class Header extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   this.toggleOpenState = this.toggleOpenState.bind(this);
-  //   this.state = {
-  //     isOpen: false
-  //   };
-  // }
-  // toggleOpenState() {
-  //   this.setState({
-  //     isOpen: !this.state.isOpen
-  //   });
-  // }
 
     render() {
 
         return (
-
-          <nav className="shift sticky-top">
-            {/* <button  onClick={this.toggleOpenState}>
-             <span></span>
-           </button> */}
-        <ul>
-        <Link
-            activeClass='active'
-            to='portfolio'
-            spy={true}
-            smooth={true}
-            offset={-50}
-            duration={1000}
-            >
-              <li>
-           <a href="#portfolio"><b>HOME</b></a>
-           </li>
-          </Link>
-
-          <Link
-            activeClass='active'
-            to='about'
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={1000}
-            >
-                <li>
-              <a href="#about"><b>ABOUT</b></a>
-              </li>
-             </Link>
-
-             
-            <Link
-            activeClass='active'
-            to='projects'
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={1000}
-            >
-                <li>
-              <a  href="#projects"><b>PORTFOLIO</b></a>
-              </li>
+      
+          <Navbar expand="lg" className="shift fixed-top" id="nav">
+          <Navbar.Toggle className="toggle ml-auto" aria-controls="basic-navbar-nav" />  
+          <Navbar.Collapse className="collapse" id="basic-navbar-nav">
+            <Nav className="nav mr-auto">
+            
+            <Link className="link"
+              activeClass='active'
+              to='portfolio'
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              >
+                
+              <Nav.Link  href="#portfolio"><strong>HOME</strong></Nav.Link>
+            
             </Link>
-
-            <Link
-            activeClass='active'
-            to='contact'
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={1000}
-            >
-                <li>
-                <a  href="#contact"><b>CONTACT</b></a>
-                </li>
-            </Link>
-        </ul>
-          </nav>
+            
+            <Link className="link"
+              activeClass='active'
+              to='about'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+              >
+                
+              <Nav.Link href="#about"><strong>ABOUT</strong></Nav.Link>
+               
+              </Link>
+                
+              <Link className="link"
+              activeClass='active'
+              to='projects'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+              >
+                
+               <Nav.Link href="#projects"><strong>PORTFOLIO</strong></Nav.Link>
+                
+              </Link>
+            
+              <Link className="link"
+              activeClass='active'
+              to='contact'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+              >
+                
+               <Nav.Link href="#contact"><strong>CONTACT</strong></Nav.Link>
+                
+              </Link>
+              
+              </Nav>
+              </Navbar.Collapse>
+            </Navbar>
         )
     };
 
