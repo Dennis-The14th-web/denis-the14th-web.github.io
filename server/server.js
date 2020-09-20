@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('./models/Post');
 const Feedback = mongoose.model('Feedback');
-const { MONGOLAB_URI } = require('./config/keys');
+const { MONGODB_URI } = require('./config/keys');
 
 
 // require('dotenv/config');
@@ -49,7 +49,7 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
   }
 
-mongoose.connect(MONGOLAB_URI,
+mongoose.connect(MONGODB_URI,
 { useNewUrlParser: true,
 useUnifiedTopology: true 
 })
