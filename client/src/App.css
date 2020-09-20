@@ -574,7 +574,7 @@ position:relative;
 
 /* responsive media queries */
 
-@media only screen and (max-width: 600px) { */
+@media only screen and (max-width: 600px) { 
  
   .header11{
     font-family: 'Julius Sans One', sans-serif;
@@ -602,25 +602,6 @@ position:relative;
     letter-spacing: 0.0625em;
     width: calc(20ch + 20*0.0625em);
   }
-
-  /* #header1 {
-      font-family: "Space Mono", Arial, serif;
-      color: #0c0c0c;
-      padding: 2px;
-      font-size: medium;
-      text-align: center;
-      font-weight: 700;
-  }
-
-  .header1{
-      font-family: "Space Mono", Arial, serif;
-      color: #252323;
-      font-size: 1.5em;
-      padding: 5px;
-      text-align: center;
-      font-weight: 700;
-      margin-top: -5px;
-  } */
 
   .footer
 {
