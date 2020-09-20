@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('./models/Post');
 const Feedback = mongoose.model('Feedback');
-// const { MONGOLAB_URI } = require('./keys');
+const { MONGOLAB_URI } = require('./config/keys');
 
 
 // require('dotenv/config');
@@ -49,9 +49,16 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static("client/build"));
   }
 
-mongoose.connect("mongodb://portfoliocoding:portfoliocodingmaster1$@ds161517.mlab.com:61517/heroku_d10n8ht4",
-{ useNewUrlParser: true, useUnifiedTopology: true },
- () => console.log("connected to DB"));
+mongoose.connect(MONGOLAB_URI,
+{ useNewUrlParser: true,
+useUnifiedTopology: true 
+})
+mongoose.connection.on('connected',()=>{
+    console.log("conneted to db")
+})
+mongoose.connection.on('error',(err)=>{
+    console.log("err connecting",err)
+})
 
 // module.exports = router;
 
