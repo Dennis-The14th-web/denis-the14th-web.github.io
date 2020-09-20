@@ -521,7 +521,7 @@ position:relative;
   .header12, small {
     font-family: 'Julius Sans One', sans-serif;
     font-family: 'Kelly Slab', cursive;
-    color: #91640F;
+    color: #0000ff;
     text-align: center;
     font-weight: bolder;
   }
@@ -529,7 +529,7 @@ position:relative;
   .header11{
     font-family: 'Julius Sans One', sans-serif;
     font-family: 'Kelly Slab', cursive;
-    color: #91640F;
+    color: #0000ff;
     text-align: center;
     font-size: 22px;
     font-weight: bolder;
@@ -544,7 +544,7 @@ position:relative;
 
   .header11 h3 {
     position: relative;
-    color: #91640F;
+    color: #0000ff;
     text-align: center;
     white-space: nowrap;
     font-size: 22px;
