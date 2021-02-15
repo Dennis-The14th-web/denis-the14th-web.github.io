@@ -20,9 +20,9 @@ body, html {
 #nav {
   width: 100%;
   margin: 0 auto;
-  background: #E1E1E1;
+  background: #fff;
   padding: 0;
-  box-shadow: 0px 5px 0px #808000;
+  box-shadow: 0px 5px 0px #E1E1E1;
 }
 
 Nav.Item, Nav.Link, strong {
@@ -45,6 +45,10 @@ Nav.Item, Nav.Link, strong:before {
 }
 Nav,Nav.Item, Nav.Link, strong:hover {
   color: #EEE;  
+}
+
+#dlogo {
+  width: 115px;
 }
 
 
@@ -124,20 +128,21 @@ Nav,Nav.Item, Nav.Link, strong:hover {
 }
 
 #contact-me {
-  font-family: "Space Mono", Arial, serif;
+  /* font-family: "Space Mono", Arial, serif;
   display: block;
   color: #0000ff;
   width: 50%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  font-weight: bolder;
+  font-weight: bolder; */
   text-decoration-line: none;
 }
 
 #contact-me:hover {
   color: #91640F;
-  background: #a9a9a9;
+  /* background: #a9a9a9; */
+  font-weight: bolder;
   text-decoration-line: none;
 }
 
@@ -151,7 +156,7 @@ Nav,Nav.Item, Nav.Link, strong:hover {
   color: #0c0c0c;
   padding: 15px;
   text-align: center;
-  font-family: "Space Mono", Arial, serif;
+  /* font-family: "Space Mono", Arial, serif; */
   font-weight: 700;
   /* margin-top: -5px; */
 }
@@ -163,10 +168,10 @@ h2{
 }
 
 .paragraph{
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: sans-serif;
   font-size: 19px;
-  /* padding: 2px; */
-  text-align: center;
+  padding: 2px; */
+  text-align: justify;
 }
 
 .projects-container {
@@ -264,14 +269,22 @@ position:relative;
 }
 
 .modalButton {
-  background-color: #808000;
+  background-color: #fff;
+  font-weight: bolder;
+  text-align: center;
+  padding: 10px;
+  border: solid 2px #808000;
+  width: 50%;
+  height: 50px;
 }
 
 .modalButton:hover {
-  font-family: 'Notable', sans-serif;
-  background-color:  #a9a9a9;
-  color: #91640F;
-  font-weight: bolder;
+  /* font-family: 'Notable', sans-serif; */
+  background-color: #91640F;
+  color: #FFF;
+  /* font-weight: bolder; */
+  cursor: pointer;
+  /* border: solid 2px #; */
 }
 
 .details, .tech {
@@ -325,14 +338,27 @@ position:relative;
 
 #btn-submit {
   margin-bottom: 10px;
-} 
+  color: #0c0c0c;
+  text-align: center;
+  font-weight: bolder;
+  background:#a9a9a9;
+  border: solid 3px #fff;
+  width: 20%;
+  line-height: 40px;
+}
+
+#btn-submit:hover {
+  color: #fff;
+  background: #91640F;
+  border: solid 2px #91640F;
+}
 
 .footer
 {
   font-family: "Space Mono", Arial, serif;
   color: #0c0c0c;
   padding: 4px;
-  background: #E1E1E1;
+  background: #fff;
   text-align: center;  
 }
 
@@ -400,102 +426,102 @@ position:relative;
   font-size: 40px;
   font-weight: bolder;
   letter-spacing: 0.0625em;
-  width: calc(20ch + 20*0.0625em);
+  width: calc(11ch + 11*0.0625em);
 }
 .header11 h3:after {
   display: block;
   position: absolute;
   content: "";
-  width: calc(20ch + 20*0.0625em);
+  width: calc(11ch + 11*0.0625em);
   height: 2ex;
   left: 0;
   top: 0;
   background: #E1E1E1;
-  animation: 0.6s blink 20, move 3s 1.5s forwards steps(1);
+  animation: 0.6s blink 11, move 3s 1.5s forwards steps(1);
   border-left: 1px solid #152860;
   box-shadow: 0px 1ex 0px 0px #E1E1E1;
 }
 @keyframes move {
-  5% {
-    width: calc( calc(20ch + 20*0.0625em) - (1ch + 1*0.0625em) );
+  10% {
+    width: calc( calc(11ch + 11*0.0625em) - (1ch + 1*0.0625em) );
     left: calc(1ch + 1*0.0625em);
   }
-  10% {
-    width: calc( calc(20ch + 20*0.0625em) - (2ch + 2*0.0625em) );
+  20% {
+    width: calc( calc(11ch + 11*0.0625em) - (2ch + 2*0.0625em) );
     left: calc(2ch + 2*0.0625em);
   }
-  15% {
-    width: calc( calc(20ch + 20*0.0625em) - (3ch + 3*0.0625em) );
+  30% {
+    width: calc( calc(11ch + 11*0.0625em) - (3ch + 3*0.0625em) );
     left: calc(3ch + 3*0.0625em);
   }
-  20% {
-    width: calc( calc(20ch + 20*0.0625em) - (4ch + 4*0.0625em) );
+  40% {
+    width: calc( calc(11ch + 11*0.0625em) - (4ch + 4*0.0625em) );
     left: calc(4ch + 4*0.0625em);
   }
-  25% {
-    width: calc( calc(20ch + 20*0.0625em) - (5ch + 5*0.0625em) );
+  50% {
+    width: calc( calc(11ch + 11*0.0625em) - (5ch + 5*0.0625em) );
     left: calc(5ch + 5*0.0625em);
   }
-  30% {
-    width: calc( calc(20ch + 20*0.0625em) - (6ch + 6*0.0625em) );
+  60% {
+    width: calc( calc(11ch + 11*0.0625em) - (6ch + 6*0.0625em) );
     left: calc(6ch + 6*0.0625em);
   }
-  35% {
-    width: calc( calc(20ch + 20*0.0625em) - (7ch + 7*0.0625em) );
+  70% {
+    width: calc( calc(11ch +11*0.0625em) - (7ch + 7*0.0625em) );
     left: calc(7ch + 7*0.0625em);
   }
-  40% {
-    width: calc( calc(20ch + 20*0.0625em) - (8ch + 8*0.0625em) );
+  80% {
+    width: calc( calc(11ch + 11*0.0625em) - (8ch + 8*0.0625em) );
     left: calc(8ch + 8*0.0625em);
   }
-  45% {
-    width: calc( calc(20ch + 20*0.0625em) - (9ch + 9*0.0625em) );
-    left: calc(9ch + 9*0.0625em);
-  }
-  50% {
-    width: calc( calc(20ch + 20*0.0625em) - (10ch + 10*0.0625em) );
+  90% {
+    width: calc( calc(11ch + 11*0.0625em) - (10ch + 10*0.0625em) );
     left: calc(10ch + 10*0.0625em);
   }
-  55% {
-    width: calc( calc(20ch + 20*0.0625em) - (11ch + 11*0.0625em) );
+  100% {
+    width: calc( calc(11ch + 11*0.0625em) - (11ch + 13*0.0625em) );
+    left: calc(11ch + 11*0.0625em);
+  }
+  /* 55% {
+    width: calc( calc(15ch + 15*0.0625em) - (11ch + 11*0.0625em) );
     left: calc(11ch + 11*0.0625em);
   }
   60% {
-    width: calc( calc(20ch + 20*0.0625em) - (12ch + 12*0.0625em) );
+    width: calc( calc(15ch + 15*0.0625em) - (12ch + 12*0.0625em) );
     left: calc(12ch + 12*0.0625em);
   }
   65% {
-    width: calc( calc(20ch + 20*0.0625em) - (13ch + 13*0.0625em) );
+    width: calc( calc(15ch + 15*0.0625em) - (13ch + 13*0.0625em) );
     left: calc(13ch + 13*0.0625em);
   }
   70% {
-    width: calc( calc(20ch + 20*0.0625em) - (14ch + 14*0.0625em) );
+    width: calc( calc(15ch + 15*0.0625em) - (14ch + 14*0.0625em) );
     left: calc(14ch + 14*0.0625em);
   }
   75% {
-    width: calc( calc(20ch + 20*0.0625em) - (15ch + 15*0.0625em) );
+    width: calc( calc(15ch + 15*0.0625em) - (15ch + 15*0.0625em) );
     left: calc(15ch + 15*0.0625em);
   }
   80% {
-    width: calc( calc(20ch + 20*0.0625em) - (16ch + 16*0.0625em) );
+    width: calc( calc(15ch + 15*0.0625em) - (16ch + 16*0.0625em) );
     left: calc(16ch + 16*0.0625em);
   }
   85% {
-    width: calc( calc(20ch + 20*0.0625em) - (17ch + 17*0.0625em) );
+    width: calc( calc(15ch + 15*0.0625em) - (17ch + 17*0.0625em) );
     left: calc(17ch + 17*0.0625em);
   }
   90% {
-    width: calc( calc(20ch + 20*0.0625em) - (18ch + 18*0.0625em) );
+    width: calc( calc(15ch + 15*0.0625em) - (18ch + 18*0.0625em) );
     left: calc(18ch + 18*0.0625em);
   }
   95% {
-    width: calc( calc(20ch + 20*0.0625em) - (19ch + 19*0.0625em) );
+    width: calc( calc(15ch + 15*0.0625em) - (19ch + 19*0.0625em) );
     left: calc(19ch + 19*0.0625em);
   }
   100% {
-    width: calc( calc(20ch + 20*0.0625em) - (20ch + 20*0.0625em) );
-    left: calc(20ch + 20*0.0625em);
-  }
+    width: calc( calc(15ch + 15*0.0625em) - (20ch + 20*0.0625em) );
+    left: calc(15ch + 15*0.0625em);
+  } */
 }
 @keyframes blink {
   0% {
@@ -517,8 +543,19 @@ position:relative;
 /* responsive media queries */
 
 @media only screen and (max-width: 600px) { 
+
+  .toggle{
+    background: url(/images/hamburger3.png);
+    width: fit-content;
+    height: 50px;
+    min-height: fit-content;
+    position: relative;
+    background-size: cover;
+    backface-visibility: hidden;
+    border: none;
+  }
  
-  .header12, small {
+  /* .header12, small {
     font-family: 'Julius Sans One', sans-serif;
     font-family: 'Kelly Slab', cursive;
     color: #0000ff;
@@ -560,7 +597,7 @@ position:relative;
   padding: 4px;
   color: #0c0c0c;
   font-weight: bolder;
-}
+} */
 }
 
 

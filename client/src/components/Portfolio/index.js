@@ -53,7 +53,7 @@ class Portfolio extends Component {
                 >
                 </FrontSide>
                 <BackSide
-                style={{ backgroundColor: '#fff'}}>
+                style={{ backgroundColor: '#EEE'}}>
                     <a className="fa fa-github" 
                     href="https://github.com/Dennis-The14th-web/DPD-Movies">
                     </a><br />

@@ -16,14 +16,16 @@ class About extends Component {
                 <Col lg={8}>
                 <img id="photo" src="/images/headshot2.JPG" alt="headshot" className="center" />
                 <p className="paragraph">
-                I am a full-stack web developer with a background in Radio Frequency Engineering. Proven problem-solving abilities and possess
-                a keen eye for aesthetics and presentation. Recognized for excellent interpersonal communication and team collaboration
-                skills while working on team-based projects as well as independently. Effectively leverage interest in solving complex
-                problems by contributing as a part of a fast-paced, quality-driven team. Able to build a web presence from the ground up
-                from conception to navigation, layout, and programming. Proven skilled at writing well-designed, testable
-                and efficient code using current best practices
-                in web development.
-                <a id="contact-me" className="center" href="/images/dennisupdatedresume2.pdf">VIEW RESUME</a>
+                I am a full-stack web developer with a background in radio frequency engineering.
+                Proven problem-solving abilities and posses a keen eye for aesthetics and presentation.
+                Recognized for excellent interpersonal communication and team collaboration skills while working on 
+                team-based projects as well as independently. Effectively leverage interest in solving complex
+                problems by contributing as a part of a fast-paced, quality-driven team. Able to build a web
+                presence from the ground up from conception to navigation, layout, and programming. Proven skilled 
+                at writing well-designed, testable and efficient code using current best practices in web development.
+                View education <a id="contact-me" href="/images/educationpdf11.pdf">here</a>.
+                {/* Please kindly email me @ dennis.itua1@gmail.com or leave a message in the contact section.<br />
+                <a className="fa fa-envelope" href="mailto:dennis.itua1@gmail.com" id="emails" /> */}
                </p>
 
                 {/* <p className="paragraph">
@@ -40,18 +42,14 @@ class About extends Component {
                 in a growing company. 
                </p> */}
 
-               <p className="paragraph">
-               {/* I am proficient in computer science applied to javaScript.
+               {/* <p className="paragraph">
+               I am proficient in computer science applied to javaScript.
                Databases (MySQL, MongoDB, Firebase "Docker-Containerized"). 
                Server side development (Node.js, Express). 
                Browser based technologies (HTML, CSS, Bootstrap, Materilize, 
                javaScript, jQuery, React). Deployment (AWS, Heroku, Git). 
                Quality assurance (Writing Tests). */}
-                Please kindly email me @ dennis.itua1@gmail.com
-                <a className="fa fa-envelope" 
-                href="mailto:dennis.itua1@gmail.com" id="emails">
-                </a> or leave a message in the contact section.
-                </p>
+                
                 </Col>
                 <Col lg={2}></Col>
                 </Row>

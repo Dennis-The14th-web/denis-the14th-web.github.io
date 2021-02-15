@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'react-scroll';
 import { Navbar, Nav } from 'react-bootstrap';
 
@@ -11,11 +10,23 @@ class Header extends Component {
         return (
       
           <Navbar expand="lg" className="shift fixed-top" id="nav">
+             <Link
+              activeClass='active'
+              to='portfolio'
+              spy={true}
+              smooth={true}
+              offset={-50}
+              duration={1000}
+              >
+                
+              <Nav.Link  href="#portfolio"><img id="dlogo" src="/images/dennislogo.jpeg" alt="logo" /></Nav.Link>
+            
+            </Link>
           <Navbar.Toggle className="toggle ml-auto" aria-controls="basic-navbar-nav" />  
           <Navbar.Collapse id="basic-navbar-nav">
-            <Nav className="nav mr-auto">
-            
-            <Link
+
+        <Nav className="nav ml-auto">  
+            {/* <Link
               activeClass='active'
               to='portfolio'
               spy={true}
@@ -26,7 +37,7 @@ class Header extends Component {
                 
               <Nav.Link  href="#portfolio"><strong>HOME</strong></Nav.Link>
             
-            </Link>
+            </Link> */}
             
             <Link
               activeClass='active'
