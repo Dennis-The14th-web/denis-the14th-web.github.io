@@ -13,7 +13,7 @@
 body, html {
   height: 100%;
   margin: 0;
-  color: #fff;
+  color: #0c0c0c;
   -webkit-font-smoothing: antialiased
 }
 
@@ -47,7 +47,7 @@ Nav.Item, Nav.Link, strong:before {
   transition: all .5s;
 }
 Nav,Nav.Item, Nav.Link, strong:hover {
-  color: #EEE;  
+  color: #0c0c0c;  
 }
 
 #dlogo {
@@ -75,7 +75,7 @@ Nav,Nav.Item, Nav.Link, strong:hover {
   width: 100%;
   height: 1px;
   content: '.';
-  color: transparent;
+  /* color: transparent; */
   visibility: none;
   opacity: 0;
   z-index: -1;
@@ -116,10 +116,10 @@ Nav,Nav.Item, Nav.Link, strong:hover {
 }
 
 #header1 {
+  font-family: 'Poppins', sans-serif;
   color: #0c0c0c;
   padding: 5px;
   text-align: center;
-  font-family: "Space Mono", Arial, serif;
   font-weight: 700;
 }
 
@@ -184,8 +184,8 @@ h2{
 }
 
 .projects-container {
-  font-family: "Space Mono", Arial, serif;
-position:relative;
+  font-family: 'Poppins', sans-serif;;
+  position:relative;
   backface-visibility: hidden;
   background-size: cover;
 }
@@ -266,7 +266,7 @@ position:relative;
 }
 
 .viewSite:hover {
-  font-family: 'Notable', sans-serif;
+  font-family: 'Poppins', sans-serif;
   text-decoration-line: none;
   color: #91640F;
 }
@@ -282,7 +282,7 @@ position:relative;
   font-weight: bolder;
   text-align: center;
   padding: 10px;
-  border: solid 2px #808000;
+  border: solid 2px #91640F;
   width: 50%;
   height: 50px;
 }
@@ -296,7 +296,12 @@ position:relative;
   /* border: solid 2px #; */
 }
 
+#contained-modal-title-vcenter{
+  color: #0c0c0c;
+}
+
 .details, .tech {
+  color: #0c0c0c;
   font-weight: 600;
   text-decoration-line: underline;
 }
@@ -308,7 +313,7 @@ position:relative;
 }
 
 .header{
-  font-family: 'Bungee Inline', cursive;
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   color: #fff;
   text-align: center;
