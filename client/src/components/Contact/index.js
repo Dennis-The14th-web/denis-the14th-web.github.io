@@ -41,16 +41,15 @@ class Contact extends Component {
 
           <div className="container-contact flex section-container p-1" id="contact">
             <Container>
-            <h2 id="header2">CONTACT</h2>
-            <hr id="contactline"/>
+            <h2 className="header">CONTACT</h2>
+            <hr className="titleLine"></hr>
             <div className="alert">Message sent successfully.</div>
           <Row>
-            <Col log={2}></Col>
             
-            <Col lg={8}>
+            <Col lg={4}>
             <Form action="/" method="post" id="contactForm">
     <Form.Group controlId="formBasicName">
-    <Form.Label>Name</Form.Label>
+    <Form.Label></Form.Label>
     <Form.Control type="name" placeholder="Enter name"
     value={this.state.name} 
     onChange={e => this.setState({ name: e.target.value})} required
@@ -59,7 +58,7 @@ class Contact extends Component {
 
 
   <Form.Group controlId="formBasicEmail">
-    <Form.Label>Email address</Form.Label>
+    <Form.Label></Form.Label>
     <Form.Control type="email" placeholder="Enter email"
     value={this.state.email} 
     onChange={e => this.setState({ email: e.target.value})} required
@@ -71,7 +70,7 @@ class Contact extends Component {
 
   
   <Form.Group controlId="exampleForm.ControlTextarea1">
-    <Form.Label>Message</Form.Label>
+    <Form.Label></Form.Label>
     <Form.Control as="textarea" rows="6"
      placeholder="Your message"
      value={this.state.message} 
@@ -81,15 +80,20 @@ class Contact extends Component {
   {/* <Form.Group controlId="formBasicCheckbox">
     <Form.Check type="checkbox" label="Check me out" />
   </Form.Group> */}
-  <Button  onClick={e=> this.onSubmit(e)} 
+  <div className="container">
+    <div id="submitDiv">
+    <div  onClick={e=> this.onSubmit(e)} 
     id="btn-submit" type="submit"
     variant="primary">
     Submit
-  </Button>
+  </div>
+  </div>
+  </div>
+  
 </Form>
 </Col>
-
-<Col lg={2}></Col>
+<Col log={4}></Col>
+<Col lg={4}></Col>
 </Row>
 </Container>
 </div>

@@ -16,8 +16,8 @@ class App extends Component {
   render() {
   return (
     <div className="App">
-      <Header />
       <Main />
+      <Header />
       <About />
       <Portfolio />
       <Contact onSubmit={fields => this.onSubmit(fields)} />

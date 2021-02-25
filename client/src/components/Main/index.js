@@ -1,5 +1,7 @@
 import React, {Component} from 'react';
 import {Container, Row, Col} from 'react-bootstrap';
+import TypeWriterEffect from 'react-typewriter-effect';
+import { Link } from 'react-scroll';
 
 
 class Main extends Component {
@@ -9,21 +11,56 @@ class Main extends Component {
         return (
 
           <Container className="portfolio-container section-container p-3" id="portfolio">
-          <Row>
-          <Col lg></Col>
-          <Col lg>
-          <div className="header11"><h3> Hi!<small> I'm </small></h3><h3>Dennis Itua,</h3>
-          <h3 className="header12"><small>A Full-Stack</small></h3>
-          <h3 className="header12"><small>Web Developer.</small></h3>
-          <h3 className="header12"><small>Welcome to my</small></h3>
-          <h3 className="header12"><small>MERN-Stack</small></h3>
-          <h3 className="header12"><small>Portfolio.</small></h3>
+        <Row>
+          <Col lg={3}></Col>
+          <Col lg={6}>
+        <div className="typeWriterEffect">
+        <TypeWriterEffect
+        textStyle={{
+          fontFamily: 'Poppins',
+          color: '#fff',
+          fontWeight: 700,
+          fontSize: '1.3em',
+        }}
+        startDelay={2000}
+        cursorColor="#252323"
+        multiText={[
+         `Hello, my name is Dennis Itua. 
+         I am a passionate full-stack web developer.`
+        ]}
+        loop={true}
+        nextTextDelay={1000}
+        typeSpeed={30}
+      />
+     
+      </div>
+      </Col>
+      <Col lg={3}></Col>
+      </Row>
+      <Row>
+        <Col lg={3}></Col>
+        <Col lg={6}>
+          <div className="container">
+          <div id="submitDivs">
+          <Link
+              activeClass='active'
+              to='about'
+              spy={true}
+              smooth={true}
+              offset={-70}
+              duration={1000}
+              >
+                
+              <div id="info-btn" href="#about">Learn more</div>
+               
+      </Link>
           </div>
-          </Col>
-          <Col lg></Col>
-          </Row>
+          </div>
+        </Col>
+        <Col lg={3}></Col>
+      </Row>
+      
           </Container>
-
         );
     };
 }

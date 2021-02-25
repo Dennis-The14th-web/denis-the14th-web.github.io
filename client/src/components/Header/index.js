@@ -19,13 +19,13 @@ class Header extends Component {
               duration={1000}
               >
                 
-              <Nav.Link  href="#portfolio"><img id="dlogo" src="/images/dennislogo.jpeg" alt="logo" /></Nav.Link>
+              <Nav.Link  href="#portfolio"><img id="dlogo" src="/images/dennislogo.jpg" alt="logo" /></Nav.Link>
             
             </Link>
           <Navbar.Toggle className="toggle ml-auto" aria-controls="basic-navbar-nav" />  
           <Navbar.Collapse id="basic-navbar-nav">
 
-        <Nav className="nav ml-auto">  
+        <Nav className="nav mr-auto">  
             {/* <Link
               activeClass='active'
               to='portfolio'
@@ -48,7 +48,7 @@ class Header extends Component {
               duration={1000}
               >
                 
-              <Nav.Link href="#about"><strong>ABOUT</strong></Nav.Link>
+              <Nav.Link href="#about"><strong>About</strong></Nav.Link>
                
               </Link>
                 
@@ -61,7 +61,7 @@ class Header extends Component {
               duration={1000}
               >
                 
-               <Nav.Link href="#projects"><strong>PORTFOLIO</strong></Nav.Link>
+               <Nav.Link href="#projects"><strong>Portfolio</strong></Nav.Link>
                 
               </Link>
             
@@ -74,7 +74,7 @@ class Header extends Component {
               duration={1000}
               >
                 
-               <Nav.Link href="#contact"><strong>CONTACT</strong></Nav.Link>
+               <Nav.Link href="#contact"><strong>Contact</strong></Nav.Link>
                 
               </Link>
               
