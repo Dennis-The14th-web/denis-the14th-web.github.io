@@ -4,12 +4,11 @@
   "description": "bundler",
   "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "concurrently \"if-env NODE_ENV=production\" \"cd server && node server.js\" \"cd client && npm run start\"",
-    "start:prod": "concurrently \"if-env NODE_ENV=production\" \"cd server && node server.js\" \"cd client && npm run start\"",
-    "start:dev": "concurrently \"if-env NODE_ENV=production\" \"cd server && node server.js\" \"cd client && npm run start\"",
-    "client": "cd client && npm run start",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Dennis",

@@ -106,8 +106,8 @@ Nav,Nav.Item, Nav.Link, strong:hover {
 }
 
 #photo {
-  width: 240px;
-  height: 370px;
+  width: 550px;
+  height: 750px;
   margin: 10px auto 10px auto;
   transition: transform 1s;
   transform-style: preserve-3d;

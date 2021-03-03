@@ -1,5 +1,6 @@
 const express = require('express');
-const http = require('http');
+const http = require('http'); 
+const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 require('./models/Post');
@@ -43,12 +44,6 @@ app.post('/', (req, res) => {
         (err)
     })
 });
-
-// Connect home to DB via prod 
-if (process.env.NODE_ENV === "production") {
-    app.use(express.static("client/build"));
-  }
-
 mongoose.connect(MONGODB_URI,
 { useNewUrlParser: true,
 useUnifiedTopology: true 
@@ -59,6 +54,14 @@ mongoose.connection.on('connected',()=>{
 mongoose.connection.on('error',(err)=>{
     console.log("err connecting",err)
 })
+
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+
+    app.get('*', (req, res) => {
+        res.sendFile(path.resolve(__dirname, 'client', 'build', 'index.html'));
+    });
+  }
 
 // module.exports = router;
 
