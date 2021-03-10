@@ -194,6 +194,30 @@ h2{
   padding: 10px;
 }
 
+.frontside:hover {
+  opacity: .6;
+  cursor: pointer;
+}
+
+.info {
+  background: #252323;
+  position: relative; 
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(100px);
+  transform: translate(-50%, -50%);
+  /* text-transform: uppercase; */
+  transition: 0.5s all;
+}
+
+.frontside:hover .info {
+  opacity: 1;
+  transform: translateY(100px);
+  cursor: pointer;
+}
+
 #frontside {
   background: url('/images/moviesimage.jpg');
   width: 100%;
@@ -438,6 +462,10 @@ h2{
   /* top: 25%; */
 }
 
+#submitDivs {
+  align-items: center;
+}
+
 #name {
   color: #808000;
   font-size: larger;
@@ -649,7 +677,7 @@ h2{
     color: #91640F;
     font-size: 10px;
     font-weight: bolder;
-    width: 50%;
+    width: 100%;
     text-align: center;
     height: auto;
     /* margin-top: 450px; */

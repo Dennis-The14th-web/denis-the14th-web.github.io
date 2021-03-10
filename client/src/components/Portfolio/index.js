@@ -39,19 +39,22 @@ class Portfolio extends Component {
     <Col lg>
         <h5 className='pjTitle'><b>DPD MOVIES</b></h5>
     <Flippy
-               flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnHover={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
               // and other props, which will go to div
                style={{ width: 'auto', height: 'auto' }} /// these are optional style, it is not necessary
               >
-               <FrontSide id='frontside'
+               <FrontSide className="frontside" id='frontside'
             //    style={{
             //     backgroundColor: '#41669d',
             //  }}
                 >
+                     <div className="info">
+                     <h4>Click Card</h4>
+                    </div>
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
@@ -78,19 +81,22 @@ class Portfolio extends Component {
     <Col lg>
     <h5 className='pjTitle'><b>CINEMA BINGE</b></h5>
         <Flippy
-               flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnHover={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
               // and other props, which will go to div
                style={{ width: 'auto', height: 'auto' }} /// these are optional style, it is not necessary
               >
-               <FrontSide id='frontside1'
+               <FrontSide className="frontside" id='frontside1'
                // style={{
               //   backgroundColor: '#41669d',
              // }}
                 >
+                    <div className="info">
+                        <h4>Click Card</h4>
+                    </div>
                
                 </FrontSide>
                 <BackSide
@@ -120,20 +126,23 @@ class Portfolio extends Component {
      <Col lg>
     <h5 className='pjTitle'><b>INSTAMILLIGRAM</b></h5>
         <Flippy
-               flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnHover={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
               // and other props, which will go to div
                style={{ width: 'auto', height: 'auto' }} /// these are optional style, it is not necessary
               >
-               <FrontSide id='frontside2'
+              <FrontSide className="frontside" id='frontside2'
                // style={{
               //   backgroundColor: '#41669d',
              // }}
                 >
-                
+                    <div className="info">
+                        <h4>Click Card</h4>
+                    </div>
+               
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
@@ -164,19 +173,22 @@ class Portfolio extends Component {
      <Col lg>
     <h5 className='pjTitle'><b>CLICKY REACT</b></h5>
         <Flippy
-               flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnHover={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
               // and other props, which will go to div
                style={{ width: 'auto', height: 'auto' }} /// these are optional style, it is not necessary
               >
-               <FrontSide id='frontside3'
+               <FrontSide className="frontside" id='frontside3'
                // style={{
               //   backgroundColor: '#41669d',
              // }}
                 >
+                    <div className="info">
+                        <h4>Click Card</h4>
+                    </div>
                
                 </FrontSide>
                 <BackSide
@@ -206,20 +218,23 @@ class Portfolio extends Component {
      <Col lg>
     <h5 className='pjTitle'><b>TRAIN SCHEDULER</b></h5>
         <Flippy
-               flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnHover={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
               // and other props, which will go to div
                style={{ width: 'auto', height: 'auto' }} /// these are optional style, it is not necessary
               >
-               <FrontSide id='frontside4'
+              <FrontSide className="frontside" id='frontside4'
                // style={{
               //   backgroundColor: '#41669d',
              // }}
                 >
-                
+                    <div className="info">
+                        <h4>Click Card</h4>
+                    </div>
+               
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>
@@ -248,20 +263,23 @@ class Portfolio extends Component {
     <Col lg>
     <h5 className='pjTitle'><b>gifKOLLECTIONZ</b></h5>
         <Flippy
-               flipOnHover={true} // default false
-               flipOnClick={false} // default false
+               flipOnHover={false} // default false
+               flipOnClick={true} // default false
                flipDirection="horizontal" // horizontal or vertical
                ref={(r) => this.flippy = r} // to use toggle method like this.flippy.toggle()
               // if you pass isFlipped prop component will be controlled component.
               // and other props, which will go to div
                style={{ width: 'auto', height: 'auto' }} /// these are optional style, it is not necessary
               >
-               <FrontSide id='frontside5'
+               <FrontSide className="frontside" id='frontside5'
                // style={{
               //   backgroundColor: '#41669d',
              // }}
                 >
-                
+                    <div className="info">
+                        <h4>Click Card</h4>
+                    </div>
+               
                 </FrontSide>
                 <BackSide
                 style={{ backgroundColor: '#fff'}}>

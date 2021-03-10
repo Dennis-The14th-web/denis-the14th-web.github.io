@@ -38,8 +38,8 @@ class Main extends Component {
       <Col lg={3}></Col>
       </Row>
       <Row>
-        <Col lg={3}></Col>
-        <Col lg={6}>
+        <Col lg={4}></Col>
+        <Col lg={4}>
           <div className="container">
           <div id="submitDivs">
           <Link
@@ -57,7 +57,7 @@ class Main extends Component {
           </div>
           </div>
         </Col>
-        <Col lg={3}></Col>
+        <Col lg={4}></Col>
       </Row>
       
           </Container>
