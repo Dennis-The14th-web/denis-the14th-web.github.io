@@ -66,7 +66,7 @@ if (process.env.NODE_ENV === "production") {
 // module.exports = router;
 
 // Listen to port and spin server
-const Port = process.env.PORT || 5000;
+const Port = process.env.NODE_ENV === 'production' ? (process.env.PORT || 80) : 5000;
 const server = http.createServer(app);
 server.listen(Port);
 console.log('Server now listening on PORT', Port)
