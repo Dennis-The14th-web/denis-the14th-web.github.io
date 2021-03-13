@@ -44,14 +44,14 @@ class Main extends Component {
           <div id="submitDivs">
           <Link
               activeClass='active'
-              to='about'
+              to='projects'
               spy={true}
               smooth={true}
               offset={-70}
               duration={1000}
               >
                 
-              <div id="info-btn" href="#about">Learn more</div>
+                <div id="info-btn" href="#projects">view my work</div>  
                
       </Link>
           </div>

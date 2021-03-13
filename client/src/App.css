@@ -1,6 +1,6 @@
 .App {
   /* background-color: #FFF; */
-  background-color: #0c0c0c;
+  background-color: #EEE;
 }
 
 /* *:after,
@@ -303,6 +303,7 @@ h2{
 
 .modalButton {
   background-color: #fff;
+  color: #0c0c0c;
   font-weight: bolder;
   text-align: center;
   padding: 10px;
@@ -339,10 +340,16 @@ h2{
 .header{
   font-family: 'Poppins', sans-serif;
   font-weight: 700;
-  color: #fff;
   text-align: center;
   /* margin-bottom: 0px; */
   /* text-decoration: underline; */
+}
+
+#headers {
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  font-weight: 700;
+  text-align: center;
 }
 
 .container-contact{

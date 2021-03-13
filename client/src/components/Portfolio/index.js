@@ -37,7 +37,7 @@ class Portfolio extends Component {
     <hr className="titleLine"></hr>
     <Row>
     <Col lg>
-        <h5 className='pjTitle'><b>DPD MOVIES</b></h5>
+        {/* <h5 className='pjTitle'><b>DPD MOVIES</b></h5> */}
     <Flippy
                flipOnHover={false} // default false
                flipOnClick={true} // default false
@@ -79,7 +79,7 @@ class Portfolio extends Component {
                 </Flippy>
     </Col>
     <Col lg>
-    <h5 className='pjTitle'><b>CINEMA BINGE</b></h5>
+    {/* <h5 className='pjTitle'><b>CINEMA BINGE</b></h5> */}
         <Flippy
                flipOnHover={false} // default false
                flipOnClick={true} // default false
@@ -124,7 +124,7 @@ class Portfolio extends Component {
                 </Flippy>
                 </Col>
      <Col lg>
-    <h5 className='pjTitle'><b>INSTAMILLIGRAM</b></h5>
+    {/* <h5 className='pjTitle'><b>INSTAMILLIGRAM</b></h5> */}
         <Flippy
                flipOnHover={false} // default false
                flipOnClick={true} // default false
@@ -171,7 +171,7 @@ class Portfolio extends Component {
     </Row>
    <Row>
      <Col lg>
-    <h5 className='pjTitle'><b>CLICKY REACT</b></h5>
+    {/* <h5 className='pjTitle'><b>CLICKY REACT</b></h5> */}
         <Flippy
                flipOnHover={false} // default false
                flipOnClick={true} // default false
@@ -216,7 +216,7 @@ class Portfolio extends Component {
                 </Flippy>
                 </Col>
      <Col lg>
-    <h5 className='pjTitle'><b>TRAIN SCHEDULER</b></h5>
+    {/* <h5 className='pjTitle'><b>TRAIN SCHEDULER</b></h5> */}
         <Flippy
                flipOnHover={false} // default false
                flipOnClick={true} // default false
@@ -261,7 +261,7 @@ class Portfolio extends Component {
                 </Flippy>
                 </Col>
     <Col lg>
-    <h5 className='pjTitle'><b>gifKOLLECTIONZ</b></h5>
+    {/* <h5 className='pjTitle'><b>gifKOLLECTIONZ</b></h5> */}
         <Flippy
                flipOnHover={false} // default false
                flipOnClick={true} // default false
