@@ -194,16 +194,26 @@ h2{
   padding: 10px;
 }
 
+.frontside {
+  transition: transform .2s;
+}
+
+
 .frontside:hover {
-  opacity: .6;
+  /* opacity: .6; */
   cursor: pointer;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.1); 
 }
 
 .info {
-  background: #252323;
+  background: #fff;
+  border-radius: 30px;
+  font-size: small;
   position: relative; 
   z-index: 3;
-  color: #fff;
+  color: #252323;
   text-align: center;
   opacity: 0;
   transform: translateY(100px);

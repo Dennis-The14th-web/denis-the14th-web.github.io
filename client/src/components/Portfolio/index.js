@@ -53,7 +53,7 @@ class Portfolio extends Component {
             //  }}
                 >
                      <div className="info">
-                     <h4>Click Card</h4>
+                     <h5>click card</h5>
                     </div>
                 </FrontSide>
                 <BackSide
@@ -95,7 +95,7 @@ class Portfolio extends Component {
              // }}
                 >
                     <div className="info">
-                        <h4>Click Card</h4>
+                    <h5>click card</h5>
                     </div>
                
                 </FrontSide>
@@ -140,7 +140,7 @@ class Portfolio extends Component {
              // }}
                 >
                     <div className="info">
-                        <h4>Click Card</h4>
+                    <h5>click card</h5>
                     </div>
                
                 </FrontSide>
@@ -187,7 +187,7 @@ class Portfolio extends Component {
              // }}
                 >
                     <div className="info">
-                        <h4>Click Card</h4>
+                    <h5>click card</h5>
                     </div>
                
                 </FrontSide>
@@ -232,7 +232,7 @@ class Portfolio extends Component {
              // }}
                 >
                     <div className="info">
-                        <h4>Click Card</h4>
+                    <h5>click card</h5>
                     </div>
                
                 </FrontSide>
@@ -277,7 +277,7 @@ class Portfolio extends Component {
              // }}
                 >
                     <div className="info">
-                        <h4>Click Card</h4>
+                        <h5>click card</h5>
                     </div>
                
                 </FrontSide>
