@@ -2,31 +2,35 @@
   "name": "denis-the14th-web.github.io",
   "version": "1.0.0",
   "description": "My portfolio dev bundler",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
-    "client-install": "npm install --prefix client",
-    "start": "concurrently \"if-env NODE_ENV=production\" \"cd server && node server.js\" \"cd client && npm run start\"",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "start": "node server/server.js",
+    "backend": "nodemon server/server.js",
+    "frontend": "npm run start --prefix client",
+    "dev": "concurrently \"npm run backend\" \"npm run start --prefix client\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Dennis-The14th-web/denis-the14th-web.github.io.git"
   },
-  "author": "Dennis",
+  "author": "Dennis Itua",
   "license": "ISC",
   "dependencies": {
-    "concurrently": "^5.3.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "mongoose": "^5.10.0",
-    "nodemon": "^2.0.4",
     "react-flippy": "^0.1.5"
   },
   "bugs": {
     "url": "https://github.com/Dennis-The14th-web/denis-the14th-web.github.io/issues"
   },
-  "homepage": "https://github.com/Dennis-The14th-web/denis-the14th-web.github.io#readme"
+  "homepage": "https://github.com/Dennis-The14th-web/denis-the14th-web.github.io#readme",
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "nodemon": "^2.0.7"
+  }
 }
