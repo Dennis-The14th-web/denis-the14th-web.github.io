@@ -432,6 +432,14 @@ h2{
   text-align: center;  
 }
 
+.footer-link a {
+  color: #252323;
+}
+
+#footer-links {
+  display: grid;
+}
+
 .fa {
   color: #0c0c0c;
   padding: 7px;
@@ -710,6 +718,10 @@ h2{
     background: #91640F;
     border: solid 2px #91640F;
     cursor: pointer;
+  }
+
+  #foot-p {
+    text-align: right;
   }
 
   /* .mainPage {

@@ -24,7 +24,7 @@ class About extends Component {
                 problems by contributing as a part of a fast-paced, quality-driven team. Able to build a web presence from the ground up
                 from conception to navigation, layout, and programming. Proven skilled at writing well-designed, testable
                 and efficient code using current best practices
-                in web development. You can view my educational qualifications <a href="/images/educationpdf11.pdf">here</a>. 
+                in web development. You can view my educational qualifications <a href="mailto:dennis.itua1@gmail.com">here</a>. 
                 kindly, drop a message in my contact section and I will surely get back to you.
                 {/* Please kindly email me @ dennis.itua1@gmail.com or leave a message in the contact section.<br />
                 <a className="fa fa-envelope" href="mailto:dennis.itua1@gmail.com" id="emails" /> */}
