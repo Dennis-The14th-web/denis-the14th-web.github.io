@@ -88,8 +88,8 @@ Nav,Nav.Item, Nav.Link, strong:hover {
 }
 
 .section-container{
-  min-height: 680px;
-  scroll-margin-top: 1rem;
+  min-height: 720px;
+  scroll-margin-top: 4rem;
   /* margin-top: 0rem;
   margin-bottom: 0rem; */
 } 
@@ -137,7 +137,7 @@ Nav,Nav.Item, Nav.Link, strong:hover {
 }
 
 #about {
-  background-image: url('/images/headshot2.JPG');
+  background-image: url('/images/CN_TOWER.JPG');
   background-repeat: no-repeat;
   background-size: 50% 100%;
 }
