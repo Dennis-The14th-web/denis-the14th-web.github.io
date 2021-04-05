@@ -8,6 +8,7 @@ class Footer extends Component {
 
         return (
             <div className="footer">
+                <Container>
                 <Row>
                 <Col lg={2}>
                     <p className="footer-link" align="left">
@@ -87,7 +88,8 @@ class Footer extends Component {
                         </p> 
                     </div> 
                     </Col> 
-                    </Row>          
+                    </Row>  
+                    </Container>        
             </div>
         )
     };
