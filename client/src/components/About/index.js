@@ -9,14 +9,14 @@ class About extends Component {
 
         return (
 
-            <Container className='section-container' id='about'>
+            <Container className='portfolio-container section-container p-3' id='about'>
                 <h2 className="header">ABOUT</h2>
                 <hr className="titleLine"></hr>
                 <Row>
-                <Col lg={4}>
-                <img id="photo" src="/images/headshot2.JPG" alt="headshot" className="center" />
-                </Col>
                 <Col lg={7}>
+                {/* <img id="photo" src="/images/headshot2.JPG" alt="headshot" className="center" /> */}
+                </Col>
+                <Col lg={4}>
                 <p className="paragraph">
                 I am a full-stack web developer with a background in radio frequency engineering. Proven problem-solving abilities and possess
                 a keen eye for aesthetics and presentation. Recognized for excellent interpersonal communication and team collaboration
@@ -53,11 +53,11 @@ class About extends Component {
                Quality assurance (Writing Tests). */}
                 
                 </Col>
-                <Col lg={1}></Col>
+                {/* <Col lg={1}></Col> */}
                 </Row>
             </Container>
-        )
-    }
+        );
+    };
 }
 
 export default About;

@@ -10,7 +10,7 @@ class Main extends Component {
             
         return (
 
-          <Container className="portfolio-container section-container p-3" id="portfolio">
+        <Container className="portfolio-container section-container p-3" id="portfolio">
         <Row>
           <Col lg={3}></Col>
           <Col lg={6}>
